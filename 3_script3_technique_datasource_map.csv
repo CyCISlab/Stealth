@@ -1,0 +1,251 @@
+Technique ID,Technique Name,Data Source Name,Data Source ID,Data Component,Full Component,Dimension
+T0800,Activate Firmware Update Mode,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0800,Activate Firmware Update Mode,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0800,Activate Firmware Update Mode,Operational Databases,DS0040,Device Alarm,Operational Databases: Device Alarm,Physical
+T0801,Monitor Process State,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0801,Monitor Process State,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0802,Automated Collection,Command,DS0017,Command Execution,Command: Command Execution,Cyber
+T0802,Automated Collection,File,DS0022,File Access,File: File Access,Cyber
+T0802,Automated Collection,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0802,Automated Collection,Script,DS0012,Script Execution,Script: Script Execution,Cyber
+T0803,Block Command Message,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0803,Block Command Message,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0803,Block Command Message,Operational Databases,DS0040,Process History/Live Data,Operational Databases: Process History/Live Data,Physical
+T0803,Block Command Message,Operational Databases,DS0040,Process/Event Alarm,Operational Databases: Process/Event Alarm,Physical
+T0803,Block Command Message,Process,DS0009,Process Termination,Process: Process Termination,Cyber
+T0804,Block Reporting Message,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0804,Block Reporting Message,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0804,Block Reporting Message,Operational Databases,DS0040,Process History/Live Data,Operational Databases: Process History/Live Data,Physical
+T0804,Block Reporting Message,Operational Databases,DS0040,Process/Event Alarm,Operational Databases: Process/Event Alarm,Physical
+T0804,Block Reporting Message,Process,DS0009,Process Termination,Process: Process Termination,Cyber
+T0805,Block Serial COM,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0805,Block Serial COM,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0805,Block Serial COM,Operational Databases,DS0040,Process History/Live Data,Operational Databases: Process History/Live Data,Physical
+T0805,Block Serial COM,Operational Databases,DS0040,Process/Event Alarm,Operational Databases: Process/Event Alarm,Physical
+T0805,Block Serial COM,Process,DS0009,Process Termination,Process: Process Termination,Cyber
+T0806,Brute Force I/O,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0806,Brute Force I/O,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0806,Brute Force I/O,Operational Databases,DS0040,Process History/Live Data,Operational Databases: Process History/Live Data,Physical
+T0807,Command-Line Interface,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0807,Command-Line Interface,Command,DS0017,Command Execution,Command: Command Execution,Cyber
+T0807,Command-Line Interface,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0809,Data Destruction,Command,DS0017,Command Execution,Command: Command Execution,Cyber
+T0809,Data Destruction,File,DS0022,File Deletion,File: File Deletion,Cyber
+T0809,Data Destruction,File,DS0022,File Modification,File: File Modification,Cyber
+T0809,Data Destruction,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0811,Data from Information Repositories,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0811,Data from Information Repositories,Logon Session,DS0028,Logon Session Creation,Logon Session: Logon Session Creation,Operational
+T0811,Data from Information Repositories,Network Share,DS0033,Network Share Access,Network Share: Network Share Access,Cyber
+T0812,Default Credentials,Logon Session,DS0028,Logon Session Creation,Logon Session: Logon Session Creation,Operational
+T0812,Default Credentials,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0813,Denial of Control,,,,,
+T0814,Denial of Service,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0814,Denial of Service,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0814,Denial of Service,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0814,Denial of Service,Operational Databases,DS0040,Process History/Live Data,Operational Databases: Process History/Live Data,Physical
+T0815,Denial of View,,,,,
+T0816,Device Restart/Shutdown,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0816,Device Restart/Shutdown,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0816,Device Restart/Shutdown,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0816,Device Restart/Shutdown,Operational Databases,DS0040,Device Alarm,Operational Databases: Device Alarm,Physical
+T0817,Drive-by Compromise,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0817,Drive-by Compromise,File,DS0022,File Creation,File: File Creation,Cyber
+T0817,Drive-by Compromise,Network Traffic,DS0029,Network Connection Creation,Network Traffic: Network Connection Creation,Cyber
+T0817,Drive-by Compromise,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0817,Drive-by Compromise,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0819,Exploit Public-Facing Application,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0819,Exploit Public-Facing Application,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0820,Exploitation for Evasion,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0821,Modify Controller Tasking,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0821,Modify Controller Tasking,Asset,DS0039,Software,Asset: Software,Operational
+T0821,Modify Controller Tasking,Operational Databases,DS0040,Device Alarm,Operational Databases: Device Alarm,Physical
+T0822,External Remote Services,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0822,External Remote Services,Logon Session,DS0028,Logon Session Metadata,Logon Session: Logon Session Metadata,Operational
+T0822,External Remote Services,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0823,Graphical User Interface,Command,DS0017,Command Execution,Command: Command Execution,Cyber
+T0823,Graphical User Interface,Logon Session,DS0028,Logon Session Creation,Logon Session: Logon Session Creation,Operational
+T0823,Graphical User Interface,Module,DS0011,Module Load,Module: Module Load,Cyber
+T0823,Graphical User Interface,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0826,Loss of Availability,,,,,
+T0827,Loss of Control,,,,,
+T0828,Loss of Productivity and Revenue,,,,,
+T0829,Loss of View,,,,,
+T0830,Adversary-in-the-Middle,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0830,Adversary-in-the-Middle,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0830,Adversary-in-the-Middle,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0830,Adversary-in-the-Middle,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0830,Adversary-in-the-Middle,Service,DS0019,Service Creation,Service: Service Creation,Operational
+T0830,Adversary-in-the-Middle,Windows Registry,DS0024,Windows Registry Key Modification,Windows Registry: Windows Registry Key Modification,Cyber
+T0831,Manipulation of Control,,,,,
+T0832,Manipulation of View,,,,,
+T0834,Native API,Process,DS0009,OS API Execution,Process: OS API Execution,Cyber
+T0835,Manipulate I/O Image,Asset,DS0039,Software,Asset: Software,Operational
+T0836,Modify Parameter,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0836,Modify Parameter,Asset,DS0039,Asset Inventory,Asset: Asset Inventory,Operational
+T0836,Modify Parameter,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0836,Modify Parameter,Operational Databases,DS0040,Device Alarm,Operational Databases: Device Alarm,Physical
+T0837,Loss of Protection,,,,,
+T0838,Modify Alarm Settings,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0838,Modify Alarm Settings,Asset,DS0039,Asset Inventory,Asset: Asset Inventory,Operational
+T0838,Modify Alarm Settings,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0838,Modify Alarm Settings,Operational Databases,DS0040,Process History/Live Data,Operational Databases: Process History/Live Data,Physical
+T0839,Module Firmware,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0839,Module Firmware,Firmware,DS0001,Firmware Modification,Firmware: Firmware Modification,Physical
+T0839,Module Firmware,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0839,Module Firmware,Operational Databases,DS0040,Device Alarm,Operational Databases: Device Alarm,Physical
+T0840,Network Connection Enumeration,Command,DS0017,Command Execution,Command: Command Execution,Cyber
+T0840,Network Connection Enumeration,Process,DS0009,OS API Execution,Process: OS API Execution,Cyber
+T0840,Network Connection Enumeration,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0840,Network Connection Enumeration,Script,DS0012,Script Execution,Script: Script Execution,Cyber
+T0842,Network Sniffing,Command,DS0017,Command Execution,Command: Command Execution,Cyber
+T0842,Network Sniffing,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0843,Program Download,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0843,Program Download,Asset,DS0039,Asset Inventory,Asset: Asset Inventory,Operational
+T0843,Program Download,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0843,Program Download,Operational Databases,DS0040,Device Alarm,Operational Databases: Device Alarm,Physical
+T0845,Program Upload,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0845,Program Upload,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0845,Program Upload,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0846,Remote System Discovery,File,DS0022,File Access,File: File Access,Cyber
+T0846,Remote System Discovery,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0846,Remote System Discovery,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0846,Remote System Discovery,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0847,Replication Through Removable Media,Drive,DS0016,Drive Creation,Drive: Drive Creation,Operational
+T0847,Replication Through Removable Media,File,DS0022,File Access,File: File Access,Cyber
+T0847,Replication Through Removable Media,File,DS0022,File Creation,File: File Creation,Cyber
+T0847,Replication Through Removable Media,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0848,Rogue Master,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0848,Rogue Master,Asset,DS0039,Asset Inventory,Asset: Asset Inventory,Operational
+T0848,Rogue Master,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0848,Rogue Master,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0848,Rogue Master,Operational Databases,DS0040,Device Alarm,Operational Databases: Device Alarm,Physical
+T0849,Masquerading,Command,DS0017,Command Execution,Command: Command Execution,Cyber
+T0849,Masquerading,File,DS0022,File Metadata,File: File Metadata,Cyber
+T0849,Masquerading,File,DS0022,File Modification,File: File Modification,Cyber
+T0849,Masquerading,Process,DS0009,Process Metadata,Process: Process Metadata,Cyber
+T0849,Masquerading,Scheduled Job,DS0003,Scheduled Job Creation,Scheduled Job: Scheduled Job Creation,Cyber
+T0849,Masquerading,Scheduled Job,DS0003,Scheduled Job Modification,Scheduled Job: Scheduled Job Modification,Cyber
+T0849,Masquerading,Service,DS0019,Service Creation,Service: Service Creation,Operational
+T0849,Masquerading,Service,DS0019,Service Modification,Service: Service Modification,Operational
+T0851,Rootkit,Firmware,DS0001,Firmware Modification,Firmware: Firmware Modification,Physical
+T0852,Screen Capture,Command,DS0017,Command Execution,Command: Command Execution,Cyber
+T0852,Screen Capture,Process,DS0009,OS API Execution,Process: OS API Execution,Cyber
+T0853,Scripting,Command,DS0017,Command Execution,Command: Command Execution,Cyber
+T0853,Scripting,Module,DS0011,Module Load,Module: Module Load,Cyber
+T0853,Scripting,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0853,Scripting,Process,DS0009,Process Metadata,Process: Process Metadata,Cyber
+T0853,Scripting,Script,DS0012,Script Execution,Script: Script Execution,Cyber
+T0855,Unauthorized Command Message,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0855,Unauthorized Command Message,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0855,Unauthorized Command Message,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0855,Unauthorized Command Message,Operational Databases,DS0040,Process History/Live Data,Operational Databases: Process History/Live Data,Physical
+T0855,Unauthorized Command Message,Operational Databases,DS0040,Process/Event Alarm,Operational Databases: Process/Event Alarm,Physical
+T0856,Spoof Reporting Message,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0856,Spoof Reporting Message,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0856,Spoof Reporting Message,Operational Databases,DS0040,Device Alarm,Operational Databases: Device Alarm,Physical
+T0856,Spoof Reporting Message,Windows Registry,DS0024,Windows Registry Key Modification,Windows Registry: Windows Registry Key Modification,Cyber
+T0857,System Firmware,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0857,System Firmware,Firmware,DS0001,Firmware Modification,Firmware: Firmware Modification,Physical
+T0857,System Firmware,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0857,System Firmware,Operational Databases,DS0040,Device Alarm,Operational Databases: Device Alarm,Physical
+T0858,Change Operating Mode,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0858,Change Operating Mode,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0858,Change Operating Mode,Operational Databases,DS0040,Device Alarm,Operational Databases: Device Alarm,Physical
+T0859,Valid Accounts,Logon Session,DS0028,Logon Session Creation,Logon Session: Logon Session Creation,Operational
+T0859,Valid Accounts,Logon Session,DS0028,Logon Session Metadata,Logon Session: Logon Session Metadata,Operational
+T0859,Valid Accounts,User Account,DS0002,User Account Authentication,User Account: User Account Authentication,Cyber
+T0860,Wireless Compromise,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0860,Wireless Compromise,Logon Session,DS0028,Logon Session Creation,Logon Session: Logon Session Creation,Operational
+T0860,Wireless Compromise,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0861,Point & Tag Identification,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0861,Point & Tag Identification,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0862,Supply Chain Compromise,File,DS0022,File Metadata,File: File Metadata,Cyber
+T0863,User Execution,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0863,User Execution,Command,DS0017,Command Execution,Command: Command Execution,Cyber
+T0863,User Execution,File,DS0022,File Access,File: File Access,Cyber
+T0863,User Execution,Network Traffic,DS0029,Network Connection Creation,Network Traffic: Network Connection Creation,Cyber
+T0863,User Execution,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0863,User Execution,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0864,Transient Cyber Asset,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0864,Transient Cyber Asset,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0865,Spearphishing Attachment,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0865,Spearphishing Attachment,File,DS0022,File Creation,File: File Creation,Cyber
+T0865,Spearphishing Attachment,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0865,Spearphishing Attachment,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0866,Exploitation of Remote Services,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0866,Exploitation of Remote Services,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0867,Lateral Tool Transfer,Command,DS0017,Command Execution,Command: Command Execution,Cyber
+T0867,Lateral Tool Transfer,File,DS0022,File Creation,File: File Creation,Cyber
+T0867,Lateral Tool Transfer,File,DS0022,File Metadata,File: File Metadata,Cyber
+T0867,Lateral Tool Transfer,Network Share,DS0033,Network Share Access,Network Share: Network Share Access,Cyber
+T0867,Lateral Tool Transfer,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0867,Lateral Tool Transfer,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0867,Lateral Tool Transfer,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0868,Detect Operating Mode,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0869,Standard Application Layer Protocol,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0869,Standard Application Layer Protocol,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0871,Execution through API,Process,DS0009,OS API Execution,Process: OS API Execution,Cyber
+T0872,Indicator Removal on Host,Command,DS0017,Command Execution,Command: Command Execution,Cyber
+T0872,Indicator Removal on Host,File,DS0022,File Deletion,File: File Deletion,Cyber
+T0872,Indicator Removal on Host,File,DS0022,File Metadata,File: File Metadata,Cyber
+T0872,Indicator Removal on Host,File,DS0022,File Modification,File: File Modification,Cyber
+T0872,Indicator Removal on Host,Process,DS0009,OS API Execution,Process: OS API Execution,Cyber
+T0872,Indicator Removal on Host,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0872,Indicator Removal on Host,Windows Registry,DS0024,Windows Registry Key Deletion,Windows Registry: Windows Registry Key Deletion,Cyber
+T0872,Indicator Removal on Host,Windows Registry,DS0024,Windows Registry Key Modification,Windows Registry: Windows Registry Key Modification,Cyber
+T0873,Project File Infection,File,DS0022,File Modification,File: File Modification,Cyber
+T0874,Hooking,Process,DS0009,OS API Execution,Process: OS API Execution,Cyber
+T0874,Hooking,Process,DS0009,Process Metadata,Process: Process Metadata,Cyber
+T0877,I/O Image,Asset,DS0039,Software,Asset: Software,Operational
+T0878,Alarm Suppression,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0878,Alarm Suppression,Operational Databases,DS0040,Device Alarm,Operational Databases: Device Alarm,Physical
+T0878,Alarm Suppression,Operational Databases,DS0040,Process History/Live Data,Operational Databases: Process History/Live Data,Physical
+T0878,Alarm Suppression,Operational Databases,DS0040,Process/Event Alarm,Operational Databases: Process/Event Alarm,Physical
+T0879,Damage to Property,,,,,
+T0880,Loss of Safety,,,,,
+T0881,Service Stop,Command,DS0017,Command Execution,Command: Command Execution,Cyber
+T0881,Service Stop,File,DS0022,File Modification,File: File Modification,Cyber
+T0881,Service Stop,Process,DS0009,OS API Execution,Process: OS API Execution,Cyber
+T0881,Service Stop,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0881,Service Stop,Process,DS0009,Process Termination,Process: Process Termination,Cyber
+T0881,Service Stop,Service,DS0019,Service Metadata,Service: Service Metadata,Operational
+T0881,Service Stop,Windows Registry,DS0024,Windows Registry Key Modification,Windows Registry: Windows Registry Key Modification,Cyber
+T0882,Theft of Operational Information,,,,,
+T0883,Internet Accessible Device,Logon Session,DS0028,Logon Session Metadata,Logon Session: Logon Session Metadata,Operational
+T0883,Internet Accessible Device,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0883,Internet Accessible Device,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0884,Connection Proxy,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0884,Connection Proxy,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0885,Commonly Used Port,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0885,Commonly Used Port,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0886,Remote Services,Command,DS0017,Command Execution,Command: Command Execution,Cyber
+T0886,Remote Services,Logon Session,DS0028,Logon Session Creation,Logon Session: Logon Session Creation,Operational
+T0886,Remote Services,Module,DS0011,Module Load,Module: Module Load,Cyber
+T0886,Remote Services,Network Share,DS0033,Network Share Access,Network Share: Network Share Access,Cyber
+T0886,Remote Services,Network Traffic,DS0029,Network Connection Creation,Network Traffic: Network Connection Creation,Cyber
+T0886,Remote Services,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0886,Remote Services,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0887,Wireless Sniffing,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0888,Remote System Information Discovery,File,DS0022,File Access,File: File Access,Cyber
+T0888,Remote System Information Discovery,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0888,Remote System Information Discovery,Network Traffic,DS0029,Network Traffic Flow,Network Traffic: Network Traffic Flow,Cyber
+T0888,Remote System Information Discovery,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0889,Modify Program,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0889,Modify Program,Asset,DS0039,Software,Asset: Software,Operational
+T0889,Modify Program,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0889,Modify Program,Operational Databases,DS0040,Device Alarm,Operational Databases: Device Alarm,Physical
+T0890,Exploitation for Privilege Escalation,Application Log,DS0015,Application Log Content,Application Log: Application Log Content,Operational
+T0891,Hardcoded Credentials,Logon Session,DS0028,Logon Session Creation,Logon Session: Logon Session Creation,Operational
+T0891,Hardcoded Credentials,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0892,Change Credential,Network Traffic,DS0029,Network Traffic Content,Network Traffic: Network Traffic Content,Cyber
+T0892,Change Credential,Operational Databases,DS0040,Device Alarm,Operational Databases: Device Alarm,Physical
+T0893,Data from Local System,Command,DS0017,Command Execution,Command: Command Execution,Cyber
+T0893,Data from Local System,File,DS0022,File Access,File: File Access,Cyber
+T0893,Data from Local System,Process,DS0009,OS API Execution,Process: OS API Execution,Cyber
+T0893,Data from Local System,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0893,Data from Local System,Script,DS0012,Script Execution,Script: Script Execution,Cyber
+T0894,System Binary Proxy Execution,Command,DS0017,Command Execution,Command: Command Execution,Cyber
+T0894,System Binary Proxy Execution,Process,DS0009,Process Creation,Process: Process Creation,Cyber
+T0894,System Binary Proxy Execution,Script,DS0012,Script Execution,Script: Script Execution,Cyber
+T0895,Autorun Image,Drive,DS0016,Drive Creation,Drive: Drive Creation,Operational
+T0895,Autorun Image,Process,DS0009,Process Creation,Process: Process Creation,Cyber

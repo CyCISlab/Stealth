@@ -1,0 +1,1252 @@
+[
+  {
+    "stix_id": "campaign--46421788-b6e1-4256-b351-f8beffd1afba",
+    "external_id": "C0028",
+    "type": "campaign",
+    "name": "2015 Ukraine Electric Power Attack",
+    "aliases": [],
+    "platforms": [],
+    "domains": [
+      "ics-attack",
+      "enterprise-attack"
+    ],
+    "description": "[2015 Ukraine Electric Power Attack](https://attack.mitre.org/campaigns/C0028) was a [Sandworm Team](https://attack.mitre.org/groups/G0034) campaign during which they used [BlackEnergy](https://attack.mitre.org/software/S0089) (specifically BlackEnergy3) and [KillDisk](https://attack.mitre.org/software/S0607) to target and disrupt transmission and distribution substations within the Ukrainian power grid. This campaign was the first major public attack conducted against the Ukrainian power grid by Sandworm Team.",
+    "created": "2023-09-27T13:11:52.340Z",
+    "modified": "2024-12-18T18:59:44.199Z",
+    "groups": [
+      {
+        "stix_id": "intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192",
+        "external_id": "G0034",
+        "name": "Sandworm Team"
+      }
+    ],
+    "tools_or_malware_used": [
+      {
+        "stix_id": "malware--e221eb77-1502-4129-af1d-fe1ad55e7ec6",
+        "external_id": "S0607",
+        "type": "malware",
+        "name": "KillDisk",
+        "description": "[KillDisk](https://attack.mitre.org/software/S0607) is a disk-wiping tool designed to overwrite files with random data to render the OS unbootable. It was first observed as a component of [BlackEnergy](https://attack.mitre.org/software/S0089) malware during cyber attacks against Ukraine in 2015. [KillDisk](https://attack.mitre.org/software/S0607) has since evolved into stand-alone malware used by a variety of threat actors against additional targets in Europe and Latin America; in 2016 a ransomware component was also incorporated into some [KillDisk](https://attack.mitre.org/software/S0607) variants.(Citation: KillDisk Ransomware)(Citation: ESEST Black Energy Jan 2016)(Citation: Trend Micro KillDisk 1)(Citation: Trend Micro KillDisk 2)"
+      },
+      {
+        "stix_id": "malware--54cc1d4f-5c53-4f0e-9ef5-11b4998e82e4",
+        "external_id": "S0089",
+        "type": "malware",
+        "name": "BlackEnergy",
+        "description": "[BlackEnergy](https://attack.mitre.org/software/S0089) is a malware toolkit that has been used by both criminal and APT actors. It dates back to at least 2007 and was originally designed to create botnets for use in conducting Distributed Denial of Service (DDoS) attacks, but its use has evolved to support various plug-ins. It is well known for being used during the confrontation between Georgia and Russia in 2008, as well as in targeting Ukrainian institutions. Variants include BlackEnergy 2 and BlackEnergy 3. (Citation: F-Secure BlackEnergy 2014)"
+      }
+    ],
+    "techniques": [
+      {
+        "stix_id": "attack-pattern--8d2f3bab-507c-4424-b58b-edc977bd215c",
+        "external_id": "T0822",
+        "name": "External Remote Services",
+        "description": "Adversaries may leverage external remote services as a point of initial access into your network. These services allow users to connect to internal network resources from external locations. Examples are VPNs, Citrix, and other access mechanisms. Remote service gateways often manage connections and credential authentication for these services. (Citation: Daniel Oakley, Travis Smith, Tripwire) External remote services allow administration of a control system from outside the system. Often, vendors and internal engineering groups have access to external remote services to control system networks via the corporate network. In some cases, this access is enabled directly from the internet. While remote access enables ease of maintenance when a control system is in a remote area, compromise of remote access solutions is a liability. The adversary may use these services to gain access to and execute attacks against a control system network. Access to valid accounts is often a requirement. As they look for an entry point into the control system network, adversaries may begin searching for existing point-to-point VPN implementations at trusted third party networks or through remote support employee connections where split tunneling is enabled. (Citation: Electricity Information Sharing and Analysis Center; SANS Industrial Control Systems March 2016)",
+        "tactics": [
+          {
+            "ta_id": "TA0108",
+            "ta_name": "Initial Access"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--d67adac8-e3b9-44f9-9e6d-6c2a7d69dbe4",
+        "external_id": "T0884",
+        "name": "Connection Proxy",
+        "description": "Adversaries may use a connection proxy to direct network traffic between systems or act as an intermediary for network communications. The definition of a proxy can also be expanded to encompass trust relationships between networks in peer-to-peer, mesh, or trusted connections between networks consisting of hosts or systems that regularly communicate with each other. The network may be within a single organization or across multiple organizations with trust relationships. Adversaries could use these types of relationships to manage command and control communications, to reduce the number of simultaneous outbound network connections, to provide resiliency in the face of connection loss, or to ride over existing trusted communications paths between victims to avoid suspicion. (Citation: Enterprise ATT&CK January 2018)",
+        "tactics": [
+          {
+            "ta_id": "TA0101",
+            "ta_name": "Command and Control"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--b9160e77-ea9e-4ba9-b1c8-53a3c466b13d",
+        "external_id": "T0857",
+        "name": "System Firmware",
+        "description": "System firmware on modern assets is often designed with an update feature. Older device firmware may be factory installed and require special reprograming equipment. When available, the firmware update feature enables vendors to remotely patch bugs and perform upgrades. Device firmware updates are often delegated to the user and may be done using a software update package. It may also be possible to perform this task over the network. An adversary may exploit the firmware update feature on accessible devices to upload malicious or out-of-date firmware. Malicious modification of device firmware may provide an adversary with root access to a device, given firmware is one of the lowest programming abstraction layers. (Citation: Basnight, Zachry, et al.)",
+        "tactics": [
+          {
+            "ta_id": "TA0110",
+            "ta_name": "Persistence"
+          },
+          {
+            "ta_id": "TA0107",
+            "ta_name": "Inhibit Response Function"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--cd2c76a4-5e23-4ca5-9c40-d5e0604f7101",
+        "external_id": "T0859",
+        "name": "Valid Accounts",
+        "description": "Adversaries may steal the credentials of a specific user or service account using credential access techniques. In some cases, default credentials for control system devices may be publicly available. Compromised credentials may be used to bypass access controls placed on various resources on hosts and within the network, and may even be used for persistent access to remote systems. Compromised and default credentials may also grant an adversary increased privilege to specific systems and devices or access to restricted areas of the network. Adversaries may choose not to use malware or tools, in conjunction with the legitimate access those credentials provide, to make it harder to detect their presence or to control devices and send legitimate commands in an unintended way. Adversaries may also create accounts, sometimes using predefined account names and passwords, to provide a means of backup access for persistence. (Citation: Booz Allen Hamilton) The overlap of credentials and permissions across a network of systems is of concern because the adversary may be able to pivot across accounts and systems to reach a high level of access (i.e., domain or enterprise administrator) and possibly between the enterprise and operational technology environments. Adversaries may be able to leverage valid credentials from one system to gain access to another system.",
+        "tactics": [
+          {
+            "ta_id": "TA0110",
+            "ta_name": "Persistence"
+          },
+          {
+            "ta_id": "TA0109",
+            "ta_name": "Lateral Movement"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--e1f9cdd2-9511-4fca-90d7-f3e92cfdd0bf",
+        "external_id": "T0886",
+        "name": "Remote Services",
+        "description": "Adversaries may leverage remote services to move between assets and network segments. These services are often used to allow operators to interact with systems remotely within the network, some examples are RDP, SMB, SSH, and other similar mechanisms. (Citation: Blake Johnson, Dan Caban, Marina Krotofil, Dan Scali, Nathan Brubaker, Christopher Glyer December 2017) (Citation: Dragos December 2017) (Citation: Joe Slowik April 2019) Remote services could be used to support remote access, data transmission, authentication, name resolution, and other remote functions. Further, remote services may be necessary to allow operators and administrators to configure systems within the network from their engineering or management workstations. An adversary may use this technique to access devices which may be dual-homed (Citation: Blake Johnson, Dan Caban, Marina Krotofil, Dan Scali, Nathan Brubaker, Christopher Glyer December 2017) to multiple network segments, and can be used for [Program Download](https://attack.mitre.org/techniques/T0843) or to execute attacks on control devices directly through [Valid Accounts](https://attack.mitre.org/techniques/T0859). Specific remote services (RDP & VNC) may be a precursor to enable [Graphical User Interface](https://attack.mitre.org/techniques/T0823) execution on devices such as HMIs or engineering workstation software. Based on incident data, CISA and FBI assessed that Chinese state-sponsored actors also compromised various authorized remote access channels, including systems designed to transfer data and/or allow access between corporate and ICS networks. (Citation: CISA AA21-201A Pipeline Intrusion July 2021)",
+        "tactics": [
+          {
+            "ta_id": "TA0108",
+            "ta_name": "Initial Access"
+          },
+          {
+            "ta_id": "TA0109",
+            "ta_name": "Lateral Movement"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--1c478716-71d9-46a4-9a53-fa5d576adb60",
+        "external_id": "T0805",
+        "name": "Block Serial COM",
+        "description": "Adversaries may block access to serial COM to prevent instructions or configurations from reaching target devices. Serial Communication ports (COM) allow communication with control system devices. Devices can receive command and configuration messages over such serial COM. Devices also use serial COM to send command and reporting messages. Blocking device serial COM may also block command messages and block reporting messages. A serial to Ethernet converter is often connected to a serial COM to facilitate communication between serial and Ethernet devices. One approach to blocking a serial COM would be to create and hold open a TCP session with the Ethernet side of the converter. A serial to Ethernet converter may have a few ports open to facilitate multiple communications. For example, if there are three serial COM available -- 1, 2 and 3 --, the converter might be listening on the corresponding ports 20001, 20002, and 20003. If a TCP/IP connection is opened with one of these ports and held open, then the port will be unavailable for use by another party. One way the adversary could achieve this would be to initiate a TCP session with the serial to Ethernet converter at 10.0.0.1 via Telnet on serial port 1 with the following command: telnet 10.0.0.1 20001.",
+        "tactics": [
+          {
+            "ta_id": "TA0107",
+            "ta_name": "Inhibit Response Function"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--63b6942d-8359-4506-bfb3-cf87aa8120ee",
+        "external_id": "T0828",
+        "name": "Loss of Productivity and Revenue",
+        "description": "Adversaries may cause loss of productivity and revenue through disruption and even damage to the availability and integrity of control system operations, devices, and related processes. This technique may manifest as a direct effect of an ICS-targeting attack or tangentially, due to an IT-targeting attack against non-segregated environments. In cases where these operations or services are brought to a halt, the loss of productivity may eventually present an impact for the end-users or consumers of products and services. The disrupted supply-chain may result in supply shortages and increased prices, among other consequences. A ransomware attack on an Australian beverage company resulted in the shutdown of some manufacturing sites, including precautionary halts to protect key systems. (Citation: Paganini, Pierluigi June 2020) The company announced the potential for temporary shortages of their products following the attack. (Citation: Paganini, Pierluigi June 2020) (Citation: Lion Corporation June 2020) In the 2021 Colonial Pipeline ransomware incident, the pipeline was unable to transport approximately 2.5 million barrels of fuel per day to the East Coast. (Citation: Colonial Pipeline Company May 2021)",
+        "tactics": [
+          {
+            "ta_id": "TA0105",
+            "ta_name": "Impact"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--1af9e3fd-2bcc-414d-adbd-fe3b95c02ca1",
+        "external_id": "T0831",
+        "name": "Manipulation of Control",
+        "description": "Adversaries may manipulate physical process control within the industrial environment. Methods of manipulating control can include changes to set point values, tags, or other parameters. Adversaries may manipulate control systems devices or possibly leverage their own, to communicate with and command physical control processes. The duration of manipulation may be temporary or longer sustained, depending on operator detection. Methods of Manipulation of Control include: * Man-in-the-middle * Spoof command message * Changing setpoints A Polish student used a remote controller device to interface with the Lodz city tram system in Poland. (Citation: John Bill May 2017) (Citation: Shelley Smith February 2008) (Citation: Bruce Schneier January 2008) Using this remote, the student was able to capture and replay legitimate tram signals. As a consequence, four trams were derailed and twelve people injured due to resulting emergency stops. (Citation: Shelley Smith February 2008) The track controlling commands issued may have also resulted in tram collisions, a further risk to those on board and nearby the areas of impact. (Citation: Bruce Schneier January 2008)",
+        "tactics": [
+          {
+            "ta_id": "TA0105",
+            "ta_name": "Impact"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--008b8f56-6107-48be-aa9f-746f927dbb61",
+        "external_id": "T0803",
+        "name": "Block Command Message",
+        "description": "Adversaries may block a command message from reaching its intended target to prevent command execution. In OT networks, command messages are sent to provide instructions to control system devices. A blocked command message can inhibit response functions from correcting a disruption or unsafe condition. (Citation: Bonnie Zhu, Anthony Joseph, Shankar Sastry 2011) (Citation: Electricity Information Sharing and Analysis Center; SANS Industrial Control Systems March 2016)",
+        "tactics": [
+          {
+            "ta_id": "TA0107",
+            "ta_name": "Inhibit Response Function"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--e6c31185-8040-4267-83d3-b217b8a92f07",
+        "external_id": "T0885",
+        "name": "Commonly Used Port",
+        "description": "Adversaries may communicate over a commonly used port to bypass firewalls or network detection systems and to blend in with normal network activity, to avoid more detailed inspection. They may use the protocol associated with the port, or a completely different protocol. They may use commonly open ports, such as the examples provided below. * TCP:80 (HTTP) * TCP:443 (HTTPS) * TCP/UDP:53 (DNS) * TCP:1024-4999 (OPC on XP/Win2k3) * TCP:49152-65535 (OPC on Vista and later) * TCP:23 (TELNET) * UDP:161 (SNMP) * TCP:502 (MODBUS) * TCP:102 (S7comm/ISO-TSAP) * TCP:20000 (DNP3) * TCP:44818 (Ethernet/IP)",
+        "tactics": [
+          {
+            "ta_id": "TA0101",
+            "ta_name": "Command and Control"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--1b22b676-9347-4c55-9a35-ef0dc653db5b",
+        "external_id": "T0814",
+        "name": "Denial of Service",
+        "description": "Adversaries may perform Denial-of-Service (DoS) attacks to disrupt expected device functionality. Examples of DoS attacks include overwhelming the target device with a high volume of requests in a short time period and sending the target device a request it does not know how to handle. Disrupting device state may temporarily render it unresponsive, possibly lasting until a reboot can occur. When placed in this state, devices may be unable to send and receive requests, and may not perform expected response functions in reaction to other events in the environment. Some ICS devices are particularly sensitive to DoS events, and may become unresponsive in reaction to even a simple ping sweep. Adversaries may also attempt to execute a Permanent Denial-of-Service (PDoS) against certain devices, such as in the case of the BrickerBot malware. (Citation: ICS-CERT April 2017) Adversaries may exploit a software vulnerability to cause a denial of service by taking advantage of a programming error in a program, service, or within the operating system software or kernel itself to execute adversary-controlled code. Vulnerabilities may exist in software that can be used to cause a denial of service condition. Adversaries may have prior knowledge about industrial protocols or control devices used in the environment through [Remote System Information Discovery](https://attack.mitre.org/techniques/T0888). There are examples of adversaries remotely causing a [Device Restart/Shutdown](https://attack.mitre.org/techniques/T0816) by exploiting a vulnerability that induces uncontrolled resource consumption. (Citation: ICS-CERT August 2018) (Citation: Common Weakness Enumeration January 2019) (Citation: MITRE March 2018)",
+        "tactics": [
+          {
+            "ta_id": "TA0107",
+            "ta_name": "Inhibit Response Function"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--ead7bd34-186e-4c79-9a4d-b65bcce6ed9d",
+        "external_id": "T0867",
+        "name": "Lateral Tool Transfer",
+        "description": "Adversaries may transfer tools or other files from one system to another to stage adversary tools or other files over the course of an operation. (Citation: Enterprise ATT&CK) Copying of files may also be performed laterally between internal victim systems to support Lateral Movement with remote Execution using inherent file sharing protocols such as file sharing over SMB to connected network shares. (Citation: Enterprise ATT&CK) In control systems environments, malware may use SMB and other file sharing protocols to move laterally through industrial networks.",
+        "tactics": [
+          {
+            "ta_id": "TA0109",
+            "ta_name": "Lateral Movement"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--25dfc8ad-bd73-4dfd-84a9-3c3d383f76e9",
+        "external_id": "T0816",
+        "name": "Device Restart/Shutdown",
+        "description": "Adversaries may forcibly restart or shutdown a device in an ICS environment to disrupt and potentially negatively impact physical processes. Methods of device restart and shutdown exist in some devices as built-in, standard functionalities. These functionalities can be executed using interactive device web interfaces, CLIs, and network protocol commands. Unexpected restart or shutdown of control system devices may prevent expected response functions happening during critical states. A device restart can also be a sign of malicious device modifications, as many updates require a shutdown in order to take effect.",
+        "tactics": [
+          {
+            "ta_id": "TA0107",
+            "ta_name": "Inhibit Response Function"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--b0628bfc-5376-4a38-9182-f324501cb4cf",
+        "external_id": "T0823",
+        "name": "Graphical User Interface",
+        "description": "Adversaries may attempt to gain access to a machine via a Graphical User Interface (GUI) to enhance execution capabilities. Access to a GUI allows a user to interact with a computer in a more visual manner than a CLI. A GUI allows users to move a cursor and click on interface objects, with a mouse and keyboard as the main input devices, as opposed to just using the keyboard. If physical access is not an option, then access might be possible via protocols such as VNC on Linux-based and Unix-based operating systems, and RDP on Windows operating systems. An adversary can use this access to execute programs and applications on the target machine.",
+        "tactics": [
+          {
+            "ta_id": "TA0104",
+            "ta_name": "Execution"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--e33c7ecc-5a38-497f-beb2-a9a2049a4c20",
+        "external_id": "T0813",
+        "name": "Denial of Control",
+        "description": "Adversaries may cause a denial of control to temporarily prevent operators and engineers from interacting with process controls. An adversary may attempt to deny process control access to cause a temporary loss of communication with the control device or to prevent operator adjustment of process controls. An affected process may still be operating during the period of control loss, but not necessarily in a desired state. (Citation: Corero) (Citation: Michael J. Assante and Robert M. Lee) (Citation: Tyson Macaulay) In the 2017 Dallas Siren incident operators were unable to disable the false alarms from the Office of Emergency Management headquarters. (Citation: Mark Loveless April 2017)",
+        "tactics": [
+          {
+            "ta_id": "TA0105",
+            "ta_name": "Impact"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--3f1f4ccb-9be2-4ff8-8f69-dd972221169b",
+        "external_id": "T0804",
+        "name": "Block Reporting Message",
+        "description": "Adversaries may block or prevent a reporting message from reaching its intended target. In control systems, reporting messages contain telemetry data (e.g., I/O values) pertaining to the current state of equipment and the industrial process. By blocking these reporting messages, an adversary can potentially hide their actions from an operator. Blocking reporting messages in control systems that manage physical processes may contribute to system impact, causing inhibition of a response function. A control system may not be able to respond in a proper or timely manner to an event, such as a dangerous fault, if its corresponding reporting message is blocked. (Citation: Bonnie Zhu, Anthony Joseph, Shankar Sastry 2011) (Citation: Electricity Information Sharing and Analysis Center; SANS Industrial Control Systems March 2016)",
+        "tactics": [
+          {
+            "ta_id": "TA0107",
+            "ta_name": "Inhibit Response Function"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--d5a69cfb-fc2a-46cb-99eb-74b236db5061",
+        "external_id": "T0846",
+        "name": "Remote System Discovery",
+        "description": "Adversaries may attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for subsequent Lateral Movement or Discovery techniques. Functionality could exist within adversary tools to enable this, but utilities available on the operating system or vendor software could also be used. (Citation: Enterprise ATT&CK January 2018)",
+        "tactics": [
+          {
+            "ta_id": "TA0102",
+            "ta_name": "Discovery"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--40b300ba-f553-48bf-862e-9471b220d455",
+        "external_id": "T0855",
+        "name": "Unauthorized Command Message",
+        "description": "Adversaries may send unauthorized command messages to instruct control system assets to perform actions outside of their intended functionality, or without the logical preconditions to trigger their expected function. Command messages are used in ICS networks to give direct instructions to control systems devices. If an adversary can send an unauthorized command message to a control system, then it can instruct the control systems device to perform an action outside the normal bounds of the device's actions. An adversary could potentially instruct a control systems device to perform an action that will cause an [Impact](https://attack.mitre.org/tactics/TA0105). (Citation: Bonnie Zhu, Anthony Joseph, Shankar Sastry 2011) In the Dallas Siren incident, adversaries were able to send command messages to activate tornado alarm systems across the city without an impending tornado or other disaster. (Citation: Zack Whittaker April 2017) (Citation: Benjamin Freed March 2019)",
+        "tactics": [
+          {
+            "ta_id": "TA0106",
+            "ta_name": "Impair Process Control"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--a81696ef-c106-482c-8f80-59c30f2569fb",
+        "external_id": "T0827",
+        "name": "Loss of Control",
+        "description": "Adversaries may seek to achieve a sustained loss of control or a runaway condition in which operators cannot issue any commands even if the malicious interference has subsided. (Citation: Corero) (Citation: Michael J. Assante and Robert M. Lee) (Citation: Tyson Macaulay) The German Federal Office for Information Security (BSI) reported a targeted attack on a steel mill in its 2014 IT Security Report.(Citation: BSI State of IT Security 2014) These targeted attacks affected industrial operations and resulted in breakdowns of control system components and even entire installations. As a result of these breakdowns, massive impact resulted in damage and unsafe conditions from the uncontrolled shutdown of a blast furnace.",
+        "tactics": [
+          {
+            "ta_id": "TA0105",
+            "ta_name": "Impact"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--b5b9bacb-97f2-4249-b804-47fd44de1f95",
+        "external_id": "T0826",
+        "name": "Loss of Availability",
+        "description": "Adversaries may attempt to disrupt essential components or systems to prevent owner and operator from delivering products or services. (Citation: Corero) (Citation: Michael J. Assante and Robert M. Lee) (Citation: Tyson Macaulay) Adversaries may leverage malware to delete or encrypt critical data on HMIs, workstations, or databases. In the 2021 Colonial Pipeline ransomware incident, pipeline operations were temporally halted on May 7th and were not fully restarted until May 12th. (Citation: Colonial Pipeline Company May 2021)",
+        "tactics": [
+          {
+            "ta_id": "TA0105",
+            "ta_name": "Impact"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stix_id": "campaign--45a98f02-852f-49b2-94c0-c63207bebbbf",
+    "external_id": "C0030",
+    "type": "campaign",
+    "name": "Triton Safety Instrumented System Attack",
+    "aliases": [],
+    "platforms": [],
+    "domains": [
+      "ics-attack",
+      "enterprise-attack"
+    ],
+    "description": "[Triton Safety Instrumented System Attack](https://attack.mitre.org/campaigns/C0030) was a campaign employed by [TEMP.Veles](https://attack.mitre.org/groups/G0088) which leveraged the [Triton](https://attack.mitre.org/software/S1009) malware framework against a petrochemical organization.(Citation: Triton-EENews-2017) The malware and techniques used within this campaign targeted specific Triconex [Safety Controller](https://attack.mitre.org/assets/A0010)s within the environment.(Citation: FireEye TRITON 2018) The incident was eventually discovered due to a safety trip that occurred as a result of an issue in the malware.(Citation: FireEye TRITON 2017)",
+    "created": "2024-03-25T17:47:37.619Z",
+    "modified": "2024-11-17T16:15:02.223Z",
+    "groups": [
+      {
+        "stix_id": "intrusion-set--9538b1a4-4120-4e2d-bf59-3b11fcab05a4",
+        "external_id": "G0088",
+        "name": "TEMP.Veles"
+      }
+    ],
+    "tools_or_malware_used": [
+      {
+        "stix_id": "malware--80099a91-4c86-4bea-9ccb-dac55d61960e",
+        "external_id": "S1009",
+        "type": "malware",
+        "name": "Triton",
+        "description": "[Triton](https://attack.mitre.org/software/S1009) is an attack framework built to interact with Triconex Safety Instrumented System (SIS) controllers.(Citation: Blake Johnson, Dan Caban, Marina Krotofil, Dan Scali, Nathan Brubaker, Christopher Glyer December 2017)(Citation: Dragos December 2017)(Citation: DHS CISA February 2019)(Citation: Schneider Electric January 2018)(Citation: Julian Gutmanis March 2019)(Citation: Schneider December 2018)(Citation: Jos Wetzels January 2018)"
+      }
+    ],
+    "techniques": [
+      {
+        "stix_id": "attack-pattern--9a505987-ab05-4f46-a9a6-6441442eec3b",
+        "external_id": "T0830",
+        "name": "Adversary-in-the-Middle",
+        "description": "Adversaries with privileged network access may seek to modify network traffic in real time using adversary-in-the-middle (AiTM) attacks. (Citation: Gabriel Sanchez October 2017) This type of attack allows the adversary to intercept traffic to and/or from a particular device on the network. If a AiTM attack is established, then the adversary has the ability to block, log, modify, or inject traffic into the communication stream. There are several ways to accomplish this attack, but some of the most-common are Address Resolution Protocol (ARP) poisoning and the use of a proxy. (Citation: Bonnie Zhu, Anthony Joseph, Shankar Sastry 2011) An AiTM attack may allow an adversary to perform the following attacks: [Block Reporting Message](https://attack.mitre.org/techniques/T0804), [Spoof Reporting Message](https://attack.mitre.org/techniques/T0856), [Modify Parameter](https://attack.mitre.org/techniques/T0836), [Unauthorized Command Message](https://attack.mitre.org/techniques/T0855)",
+        "tactics": [
+          {
+            "ta_id": "TA0100",
+            "ta_name": "Collection"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--24a9253e-8948-4c98-b751-8e2aee53127c",
+        "external_id": "T0807",
+        "name": "Command-Line Interface",
+        "description": "Adversaries may utilize command-line interfaces (CLIs) to interact with systems and execute commands. CLIs provide a means of interacting with computer systems and are a common feature across many types of platforms and devices within control systems environments. (Citation: Enterprise ATT&CK January 2018) Adversaries may also use CLIs to install and run new software, including malicious tools that may be installed over the course of an operation. CLIs are typically accessed locally, but can also be exposed via services, such as SSH, Telnet, and RDP. Commands that are executed in the CLI execute with the current permissions level of the process running the terminal emulator, unless the command specifies a change in permissions context. Many controllers have CLI interfaces for management purposes.",
+        "tactics": [
+          {
+            "ta_id": "TA0104",
+            "ta_name": "Execution"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--2dc2b567-8821-49f9-9045-8740f3d0b958",
+        "external_id": "T0853",
+        "name": "Scripting",
+        "description": "Adversaries may use scripting languages to execute arbitrary code in the form of a pre-written script or in the form of user-supplied code to an interpreter. Scripting languages are programming languages that differ from compiled languages, in that scripting languages use an interpreter, instead of a compiler. These interpreters read and compile part of the source code just before it is executed, as opposed to compilers, which compile each and every line of code to an executable file. Scripting allows software developers to run their code on any system where the interpreter exists. This way, they can distribute one package, instead of precompiling executables for many different systems. Scripting languages, such as Python, have their interpreters shipped as a default with many Linux distributions. In addition to being a useful tool for developers and administrators, scripting language interpreters may be abused by the adversary to execute code in the target environment. Due to the nature of scripting languages, this allows for weaponized code to be deployed to a target easily, and leaves open the possibility of on-the-fly scripting to perform a task.",
+        "tactics": [
+          {
+            "ta_id": "TA0104",
+            "ta_name": "Execution"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--63b6942d-8359-4506-bfb3-cf87aa8120ee",
+        "external_id": "T0828",
+        "name": "Loss of Productivity and Revenue",
+        "description": "Adversaries may cause loss of productivity and revenue through disruption and even damage to the availability and integrity of control system operations, devices, and related processes. This technique may manifest as a direct effect of an ICS-targeting attack or tangentially, due to an IT-targeting attack against non-segregated environments. In cases where these operations or services are brought to a halt, the loss of productivity may eventually present an impact for the end-users or consumers of products and services. The disrupted supply-chain may result in supply shortages and increased prices, among other consequences. A ransomware attack on an Australian beverage company resulted in the shutdown of some manufacturing sites, including precautionary halts to protect key systems. (Citation: Paganini, Pierluigi June 2020) The company announced the potential for temporary shortages of their products following the attack. (Citation: Paganini, Pierluigi June 2020) (Citation: Lion Corporation June 2020) In the 2021 Colonial Pipeline ransomware incident, the pipeline was unable to transport approximately 2.5 million barrels of fuel per day to the East Coast. (Citation: Colonial Pipeline Company May 2021)",
+        "tactics": [
+          {
+            "ta_id": "TA0105",
+            "ta_name": "Impact"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--be69c571-d746-4b1f-bdd0-c0c9817e9068",
+        "external_id": "T0843",
+        "name": "Program Download",
+        "description": "Adversaries may perform a program download to transfer a user program to a controller. Variations of program download, such as online edit and program append, allow a controller to continue running during the transfer and reconfiguration process without interruption to process control. However, before starting a full program download (i.e., download all) a controller may need to go into a stop state. This can have negative consequences on the physical process, especially if the controller is not able to fulfill a time-sensitive action. Adversaries may choose to avoid a download all in favor of an online edit or program append to avoid disrupting the physical process. An adversary may need to use the technique Detect Operating Mode or Change Operating Mode to make sure the controller is in the proper mode to accept a program download. The granularity of control to transfer a user program in whole or parts is dictated by the management protocol (e.g., S7CommPlus, TriStation) and underlying controller API. Thus, program download is a high-level term for the suite of vendor-specific API calls used to configure a controllers user program memory space. [Modify Controller Tasking](https://attack.mitre.org/techniques/T0821) and [Modify Program](https://attack.mitre.org/techniques/T0889) represent the configuration changes that are transferred to a controller via a program download.",
+        "tactics": [
+          {
+            "ta_id": "TA0109",
+            "ta_name": "Lateral Movement"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--53a26eee-1080-4d17-9762-2027d5a1b805",
+        "external_id": "T0872",
+        "name": "Indicator Removal on Host",
+        "description": "Adversaries may attempt to remove indicators of their presence on a system in an effort to cover their tracks. In cases where an adversary may feel detection is imminent, they may try to overwrite, delete, or cover up changes they have made to the device.",
+        "tactics": [
+          {
+            "ta_id": "TA0103",
+            "ta_name": "Evasion"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--cd2c76a4-5e23-4ca5-9c40-d5e0604f7101",
+        "external_id": "T0859",
+        "name": "Valid Accounts",
+        "description": "Adversaries may steal the credentials of a specific user or service account using credential access techniques. In some cases, default credentials for control system devices may be publicly available. Compromised credentials may be used to bypass access controls placed on various resources on hosts and within the network, and may even be used for persistent access to remote systems. Compromised and default credentials may also grant an adversary increased privilege to specific systems and devices or access to restricted areas of the network. Adversaries may choose not to use malware or tools, in conjunction with the legitimate access those credentials provide, to make it harder to detect their presence or to control devices and send legitimate commands in an unintended way. Adversaries may also create accounts, sometimes using predefined account names and passwords, to provide a means of backup access for persistence. (Citation: Booz Allen Hamilton) The overlap of credentials and permissions across a network of systems is of concern because the adversary may be able to pivot across accounts and systems to reach a high level of access (i.e., domain or enterprise administrator) and possibly between the enterprise and operational technology environments. Adversaries may be able to leverage valid credentials from one system to gain access to another system.",
+        "tactics": [
+          {
+            "ta_id": "TA0110",
+            "ta_name": "Persistence"
+          },
+          {
+            "ta_id": "TA0109",
+            "ta_name": "Lateral Movement"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--ead7bd34-186e-4c79-9a4d-b65bcce6ed9d",
+        "external_id": "T0867",
+        "name": "Lateral Tool Transfer",
+        "description": "Adversaries may transfer tools or other files from one system to another to stage adversary tools or other files over the course of an operation. (Citation: Enterprise ATT&CK) Copying of files may also be performed laterally between internal victim systems to support Lateral Movement with remote Execution using inherent file sharing protocols such as file sharing over SMB to connected network shares. (Citation: Enterprise ATT&CK) In control systems environments, malware may use SMB and other file sharing protocols to move laterally through industrial networks.",
+        "tactics": [
+          {
+            "ta_id": "TA0109",
+            "ta_name": "Lateral Movement"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--e1f9cdd2-9511-4fca-90d7-f3e92cfdd0bf",
+        "external_id": "T0886",
+        "name": "Remote Services",
+        "description": "Adversaries may leverage remote services to move between assets and network segments. These services are often used to allow operators to interact with systems remotely within the network, some examples are RDP, SMB, SSH, and other similar mechanisms. (Citation: Blake Johnson, Dan Caban, Marina Krotofil, Dan Scali, Nathan Brubaker, Christopher Glyer December 2017) (Citation: Dragos December 2017) (Citation: Joe Slowik April 2019) Remote services could be used to support remote access, data transmission, authentication, name resolution, and other remote functions. Further, remote services may be necessary to allow operators and administrators to configure systems within the network from their engineering or management workstations. An adversary may use this technique to access devices which may be dual-homed (Citation: Blake Johnson, Dan Caban, Marina Krotofil, Dan Scali, Nathan Brubaker, Christopher Glyer December 2017) to multiple network segments, and can be used for [Program Download](https://attack.mitre.org/techniques/T0843) or to execute attacks on control devices directly through [Valid Accounts](https://attack.mitre.org/techniques/T0859). Specific remote services (RDP & VNC) may be a precursor to enable [Graphical User Interface](https://attack.mitre.org/techniques/T0823) execution on devices such as HMIs or engineering workstation software. Based on incident data, CISA and FBI assessed that Chinese state-sponsored actors also compromised various authorized remote access channels, including systems designed to transfer data and/or allow access between corporate and ICS networks. (Citation: CISA AA21-201A Pipeline Intrusion July 2021)",
+        "tactics": [
+          {
+            "ta_id": "TA0108",
+            "ta_name": "Initial Access"
+          },
+          {
+            "ta_id": "TA0109",
+            "ta_name": "Lateral Movement"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--40b300ba-f553-48bf-862e-9471b220d455",
+        "external_id": "T0855",
+        "name": "Unauthorized Command Message",
+        "description": "Adversaries may send unauthorized command messages to instruct control system assets to perform actions outside of their intended functionality, or without the logical preconditions to trigger their expected function. Command messages are used in ICS networks to give direct instructions to control systems devices. If an adversary can send an unauthorized command message to a control system, then it can instruct the control systems device to perform an action outside the normal bounds of the device's actions. An adversary could potentially instruct a control systems device to perform an action that will cause an [Impact](https://attack.mitre.org/tactics/TA0105). (Citation: Bonnie Zhu, Anthony Joseph, Shankar Sastry 2011) In the Dallas Siren incident, adversaries were able to send command messages to activate tornado alarm systems across the city without an impending tornado or other disaster. (Citation: Zack Whittaker April 2017) (Citation: Benjamin Freed March 2019)",
+        "tactics": [
+          {
+            "ta_id": "TA0106",
+            "ta_name": "Impair Process Control"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stix_id": "campaign--1169ff24-b35f-4d8d-8cf3-643a2834227f",
+    "external_id": "C0041",
+    "type": "campaign",
+    "name": "FrostyGoop Incident",
+    "aliases": [],
+    "platforms": [],
+    "domains": [
+      "ics-attack",
+      "enterprise-attack"
+    ],
+    "description": "[FrostyGoop Incident](https://attack.mitre.org/campaigns/C0041) took place in January 2024 against a municipal district heating company in Ukraine. Following initial access via likely exploitation of external facing services, [FrostyGoop](https://attack.mitre.org/software/S1165) was used to manipulate ENCO control systems via legitimate Modbus commands to impact the delivery of heating services to Ukrainian civilians.(Citation: Dragos FROSTYGOOP 2024)(Citation: Nozomi BUSTLEBERM 2024)",
+    "created": "2024-11-20T23:15:36.728Z",
+    "modified": "2025-03-05T22:12:26.131Z",
+    "groups": [],
+    "tools_or_malware_used": [
+      {
+        "stix_id": "malware--b34df04a-9d30-4d84-a03f-0d536ee19a05",
+        "external_id": "S1165",
+        "type": "malware",
+        "name": "FrostyGoop",
+        "description": "[FrostyGoop](https://attack.mitre.org/software/S1165) is a Windows-based binary written in Golang that allows for interaction with industrial control system (ICS) equipment via Modbus TCP over port 502. [FrostyGoop](https://attack.mitre.org/software/S1165) allows for reading and writing data to holding registers on targeted devices, manipulating the operation of systems for malicious purposes. [FrostyGoop](https://attack.mitre.org/software/S1165) is associated with the [FrostyGoop Incident](https://attack.mitre.org/campaigns/C0041) in Ukraine.(Citation: Dragos FROSTYGOOP 2024)(Citation: Nozomi BUSTLEBERM 2024)"
+      }
+    ],
+    "techniques": [
+      {
+        "stix_id": "attack-pattern--097924ce-a9a9-4039-8591-e0deedfb8722",
+        "external_id": "T0836",
+        "name": "Modify Parameter",
+        "description": "Adversaries may modify parameters used to instruct industrial control system devices. These devices operate via programs that dictate how and when to perform actions based on such parameters. Such parameters can determine the extent to which an action is performed and may specify additional options. For example, a program on a control system device dictating motor processes may take a parameter defining the total number of seconds to run that motor. An adversary can potentially modify these parameters to produce an outcome outside of what was intended by the operators. By modifying system and process critical parameters, the adversary may cause [Impact](https://attack.mitre.org/tactics/TA0105) to equipment and/or control processes. Modified parameters may be turned into dangerous, out-of-bounds, or unexpected values from typical operations. For example, specifying that a process run for more or less time than it should, or dictating an unusually high, low, or invalid value as a parameter.",
+        "tactics": [
+          {
+            "ta_id": "TA0106",
+            "ta_name": "Impair Process Control"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--b9160e77-ea9e-4ba9-b1c8-53a3c466b13d",
+        "external_id": "T0857",
+        "name": "System Firmware",
+        "description": "System firmware on modern assets is often designed with an update feature. Older device firmware may be factory installed and require special reprograming equipment. When available, the firmware update feature enables vendors to remotely patch bugs and perform upgrades. Device firmware updates are often delegated to the user and may be done using a software update package. It may also be possible to perform this task over the network. An adversary may exploit the firmware update feature on accessible devices to upload malicious or out-of-date firmware. Malicious modification of device firmware may provide an adversary with root access to a device, given firmware is one of the lowest programming abstraction layers. (Citation: Basnight, Zachry, et al.)",
+        "tactics": [
+          {
+            "ta_id": "TA0110",
+            "ta_name": "Persistence"
+          },
+          {
+            "ta_id": "TA0107",
+            "ta_name": "Inhibit Response Function"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--138979ba-0430-4de6-a128-2fc0b056ba36",
+        "external_id": "T0829",
+        "name": "Loss of View",
+        "description": "Adversaries may cause a sustained or permanent loss of view where the ICS equipment will require local, hands-on operator intervention; for instance, a restart or manual operation. By causing a sustained reporting or visibility loss, the adversary can effectively hide the present state of operations. This loss of view can occur without affecting the physical processes themselves. (Citation: Corero) (Citation: Michael J. Assante and Robert M. Lee) (Citation: Tyson Macaulay)",
+        "tactics": [
+          {
+            "ta_id": "TA0105",
+            "ta_name": "Impact"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--b5b9bacb-97f2-4249-b804-47fd44de1f95",
+        "external_id": "T0826",
+        "name": "Loss of Availability",
+        "description": "Adversaries may attempt to disrupt essential components or systems to prevent owner and operator from delivering products or services. (Citation: Corero) (Citation: Michael J. Assante and Robert M. Lee) (Citation: Tyson Macaulay) Adversaries may leverage malware to delete or encrypt critical data on HMIs, workstations, or databases. In the 2021 Colonial Pipeline ransomware incident, pipeline operations were temporally halted on May 7th and were not fully restarted until May 12th. (Citation: Colonial Pipeline Company May 2021)",
+        "tactics": [
+          {
+            "ta_id": "TA0105",
+            "ta_name": "Impact"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stix_id": "campaign--aa73efef-1418-4dbe-b43c-87a498e97234",
+    "external_id": "C0025",
+    "type": "campaign",
+    "name": "2016 Ukraine Electric Power Attack",
+    "aliases": [],
+    "platforms": [],
+    "domains": [
+      "enterprise-attack",
+      "ics-attack"
+    ],
+    "description": "[2016 Ukraine Electric Power Attack](https://attack.mitre.org/campaigns/C0025) was a [Sandworm Team](https://attack.mitre.org/groups/G0034) campaign during which they used [Industroyer](https://attack.mitre.org/software/S0604) malware to target and disrupt distribution substations within the Ukrainian power grid. This campaign was the second major public attack conducted against Ukraine by [Sandworm Team](https://attack.mitre.org/groups/G0034).(Citation: ESET Industroyer)(Citation: Dragos Crashoverride 2018)",
+    "created": "2023-03-31T17:22:23.567Z",
+    "modified": "2025-04-16T20:37:46.567Z",
+    "groups": [
+      {
+        "stix_id": "intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192",
+        "external_id": "G0034",
+        "name": "Sandworm Team"
+      }
+    ],
+    "tools_or_malware_used": [
+      {
+        "stix_id": "malware--e401d4fe-f0c9-44f0-98e6-f93487678808",
+        "external_id": "S0604",
+        "type": "malware",
+        "name": "Industroyer",
+        "description": "[Industroyer](https://attack.mitre.org/software/S0604) is a sophisticated malware framework designed to cause an impact to the working processes of Industrial Control Systems (ICS), specifically components used in electrical substations.(Citation: ESET Industroyer) [Industroyer](https://attack.mitre.org/software/S0604) was used in the attacks on the Ukrainian power grid in December 2016.(Citation: Dragos Crashoverride 2017) This is the first publicly known malware specifically designed to target and impact operations in the electric grid.(Citation: Dragos Crashoverride 2018)"
+      }
+    ],
+    "techniques": [
+      {
+        "external_id": "T0813",
+        "name": "Denial of Control"
+      },
+      {
+        "external_id": "T0815",
+        "name": "Denial of View"
+      },
+      {
+        "external_id": "T0827",
+        "name": "Loss of Control"
+      },
+      {
+        "external_id": "T0829",
+        "name": "Loss of View"
+      },
+      {
+        "external_id": "T0831",
+        "name": "Manipulation of Control"
+      },
+      {
+        "external_id": "T0832",
+        "name": "Manipulation of View"
+      },
+      {
+        "stix_id": "attack-pattern--ead7bd34-186e-4c79-9a4d-b65bcce6ed9d",
+        "external_id": "T0867",
+        "name": "Lateral Tool Transfer",
+        "description": "Adversaries may transfer tools or other files from one system to another to stage adversary tools or other files over the course of an operation. (Citation: Enterprise ATT&CK) Copying of files may also be performed laterally between internal victim systems to support Lateral Movement with remote Execution using inherent file sharing protocols such as file sharing over SMB to connected network shares. (Citation: Enterprise ATT&CK) In control systems environments, malware may use SMB and other file sharing protocols to move laterally through industrial networks.",
+        "tactics": [
+          {
+            "ta_id": "TA0109",
+            "ta_name": "Lateral Movement"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--e1f9cdd2-9511-4fca-90d7-f3e92cfdd0bf",
+        "external_id": "T0886",
+        "name": "Remote Services",
+        "description": "Adversaries may leverage remote services to move between assets and network segments. These services are often used to allow operators to interact with systems remotely within the network, some examples are RDP, SMB, SSH, and other similar mechanisms. (Citation: Blake Johnson, Dan Caban, Marina Krotofil, Dan Scali, Nathan Brubaker, Christopher Glyer December 2017) (Citation: Dragos December 2017) (Citation: Joe Slowik April 2019) Remote services could be used to support remote access, data transmission, authentication, name resolution, and other remote functions. Further, remote services may be necessary to allow operators and administrators to configure systems within the network from their engineering or management workstations. An adversary may use this technique to access devices which may be dual-homed (Citation: Blake Johnson, Dan Caban, Marina Krotofil, Dan Scali, Nathan Brubaker, Christopher Glyer December 2017) to multiple network segments, and can be used for [Program Download](https://attack.mitre.org/techniques/T0843) or to execute attacks on control devices directly through [Valid Accounts](https://attack.mitre.org/techniques/T0859). Specific remote services (RDP & VNC) may be a precursor to enable [Graphical User Interface](https://attack.mitre.org/techniques/T0823) execution on devices such as HMIs or engineering workstation software. Based on incident data, CISA and FBI assessed that Chinese state-sponsored actors also compromised various authorized remote access channels, including systems designed to transfer data and/or allow access between corporate and ICS networks. (Citation: CISA AA21-201A Pipeline Intrusion July 2021)",
+        "tactics": [
+          {
+            "ta_id": "TA0108",
+            "ta_name": "Initial Access"
+          },
+          {
+            "ta_id": "TA0109",
+            "ta_name": "Lateral Movement"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--2dc2b567-8821-49f9-9045-8740f3d0b958",
+        "external_id": "T0853",
+        "name": "Scripting",
+        "description": "Adversaries may use scripting languages to execute arbitrary code in the form of a pre-written script or in the form of user-supplied code to an interpreter. Scripting languages are programming languages that differ from compiled languages, in that scripting languages use an interpreter, instead of a compiler. These interpreters read and compile part of the source code just before it is executed, as opposed to compilers, which compile each and every line of code to an executable file. Scripting allows software developers to run their code on any system where the interpreter exists. This way, they can distribute one package, instead of precompiling executables for many different systems. Scripting languages, such as Python, have their interpreters shipped as a default with many Linux distributions. In addition to being a useful tool for developers and administrators, scripting language interpreters may be abused by the adversary to execute code in the target environment. Due to the nature of scripting languages, this allows for weaponized code to be deployed to a target easily, and leaves open the possibility of on-the-fly scripting to perform a task.",
+        "tactics": [
+          {
+            "ta_id": "TA0104",
+            "ta_name": "Execution"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--cd2c76a4-5e23-4ca5-9c40-d5e0604f7101",
+        "external_id": "T0859",
+        "name": "Valid Accounts",
+        "description": "Adversaries may steal the credentials of a specific user or service account using credential access techniques. In some cases, default credentials for control system devices may be publicly available. Compromised credentials may be used to bypass access controls placed on various resources on hosts and within the network, and may even be used for persistent access to remote systems. Compromised and default credentials may also grant an adversary increased privilege to specific systems and devices or access to restricted areas of the network. Adversaries may choose not to use malware or tools, in conjunction with the legitimate access those credentials provide, to make it harder to detect their presence or to control devices and send legitimate commands in an unintended way. Adversaries may also create accounts, sometimes using predefined account names and passwords, to provide a means of backup access for persistence. (Citation: Booz Allen Hamilton) The overlap of credentials and permissions across a network of systems is of concern because the adversary may be able to pivot across accounts and systems to reach a high level of access (i.e., domain or enterprise administrator) and possibly between the enterprise and operational technology environments. Adversaries may be able to leverage valid credentials from one system to gain access to another system.",
+        "tactics": [
+          {
+            "ta_id": "TA0110",
+            "ta_name": "Persistence"
+          },
+          {
+            "ta_id": "TA0109",
+            "ta_name": "Lateral Movement"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--24a9253e-8948-4c98-b751-8e2aee53127c",
+        "external_id": "T0807",
+        "name": "Command-Line Interface",
+        "description": "Adversaries may utilize command-line interfaces (CLIs) to interact with systems and execute commands. CLIs provide a means of interacting with computer systems and are a common feature across many types of platforms and devices within control systems environments. (Citation: Enterprise ATT&CK January 2018) Adversaries may also use CLIs to install and run new software, including malicious tools that may be installed over the course of an operation. CLIs are typically accessed locally, but can also be exposed via services, such as SSH, Telnet, and RDP. Commands that are executed in the CLI execute with the current permissions level of the process running the terminal emulator, unless the command specifies a change in permissions context. Many controllers have CLI interfaces for management purposes.",
+        "tactics": [
+          {
+            "ta_id": "TA0104",
+            "ta_name": "Execution"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--ba203963-3182-41ac-af14-7e7ebc83cd61",
+        "external_id": "T0849",
+        "name": "Masquerading",
+        "description": "Adversaries may use masquerading to disguise a malicious application or executable as another file, to avoid operator and engineer suspicion. Possible disguises of these masquerading files can include commonly found programs, expected vendor executables and configuration files, and other commonplace application and naming conventions. By impersonating expected and vendor-relevant files and applications, operators and engineers may not notice the presence of the underlying malicious content and possibly end up running those masquerading as legitimate functions. Applications and other files commonly found on Windows systems or in engineering workstations have been impersonated before. This can be as simple as renaming a file to effectively disguise it in the ICS environment.",
+        "tactics": [
+          {
+            "ta_id": "TA0103",
+            "ta_name": "Evasion"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stix_id": "campaign--70cab19e-1745-425e-b3db-c02cd5ff157a",
+    "external_id": "C0020",
+    "type": "campaign",
+    "name": "Maroochy Water Breach",
+    "aliases": [],
+    "platforms": [],
+    "domains": [
+      "ics-attack"
+    ],
+    "description": "[Maroochy Water Breach](https://attack.mitre.org/campaigns/C0020) was an incident in 2000 where an adversary leveraged the local government\u2019s wastewater control system and stolen engineering equipment to disrupt and eventually release 800,000 liters of raw sewage into the local community.(Citation: Marshall Abrams July 2008)",
+    "created": "2023-03-10T20:01:08.133Z",
+    "modified": "2025-04-16T21:26:23.900Z",
+    "groups": [],
+    "tools_or_malware_used": [],
+    "techniques": [
+      {
+        "stix_id": "attack-pattern--8d2f3bab-507c-4424-b58b-edc977bd215c",
+        "external_id": "T0822",
+        "name": "External Remote Services",
+        "description": "Adversaries may leverage external remote services as a point of initial access into your network. These services allow users to connect to internal network resources from external locations. Examples are VPNs, Citrix, and other access mechanisms. Remote service gateways often manage connections and credential authentication for these services. (Citation: Daniel Oakley, Travis Smith, Tripwire) External remote services allow administration of a control system from outside the system. Often, vendors and internal engineering groups have access to external remote services to control system networks via the corporate network. In some cases, this access is enabled directly from the internet. While remote access enables ease of maintenance when a control system is in a remote area, compromise of remote access solutions is a liability. The adversary may use these services to gain access to and execute attacks against a control system network. Access to valid accounts is often a requirement. As they look for an entry point into the control system network, adversaries may begin searching for existing point-to-point VPN implementations at trusted third party networks or through remote support employee connections where split tunneling is enabled. (Citation: Electricity Information Sharing and Analysis Center; SANS Industrial Control Systems March 2016)",
+        "tactics": [
+          {
+            "ta_id": "TA0108",
+            "ta_name": "Initial Access"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--e5de767e-f513-41cd-aa15-33f6ce5fbf92",
+        "external_id": "T0838",
+        "name": "Modify Alarm Settings",
+        "description": "Adversaries may modify alarm settings to prevent alerts that may inform operators of their presence or to prevent responses to dangerous and unintended scenarios. Reporting messages are a standard part of data acquisition in control systems. Reporting messages are used as a way to transmit system state information and acknowledgements that specific actions have occurred. These messages provide vital information for the management of a physical process, and keep operators, engineers, and administrators aware of the state of system devices and physical processes. If an adversary is able to change the reporting settings, certain events could be prevented from being reported. This type of modification can also prevent operators or devices from performing actions to keep the system in a safe state. If critical reporting messages cannot trigger these actions then a [Impact](https://attack.mitre.org/tactics/TA0105) could occur. In ICS environments, the adversary may have to use [Alarm Suppression](https://attack.mitre.org/techniques/T0878) or contend with multiple alarms and/or alarm propagation to achieve a specific goal to evade detection or prevent intended responses from occurring. (Citation: Jos Wetzels, Marina Krotofil 2019) Methods of suppression often rely on modification of alarm settings, such as modifying in memory code to fixed values or tampering with assembly level instruction code.",
+        "tactics": [
+          {
+            "ta_id": "TA0107",
+            "ta_name": "Inhibit Response Function"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--35392fb4-a31d-4c6a-b9f2-1c65b7f5e6b9",
+        "external_id": "T0864",
+        "name": "Transient Cyber Asset",
+        "description": "Adversaries may target devices that are transient across ICS networks and external networks. Normally, transient assets are brought into an environment by authorized personnel and do not remain in that environment on a permanent basis. (Citation: North American Electric Reliability Corporation June 2021) Transient assets are commonly needed to support management functions and may be more common in systems where a remotely managed asset is not feasible, external connections for remote access do not exist, or 3rd party contractor/vendor access is required. Adversaries may take advantage of transient assets in different ways. For instance, adversaries may target a transient asset when it is connected to an external network and then leverage its trusted access in another environment to launch an attack. They may also take advantage of installed applications and libraries that are used by legitimate end-users to interact with control system devices. Transient assets, in some cases, may not be deployed with a secure configuration leading to weaknesses that could allow an adversary to propagate malicious executable code, e.g., the transient asset may be infected by malware and when connected to an ICS environment the malware propagates onto other systems.",
+        "tactics": [
+          {
+            "ta_id": "TA0108",
+            "ta_name": "Initial Access"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--83ebd22f-b401-4d59-8219-2294172cf916",
+        "external_id": "T0879",
+        "name": "Damage to Property",
+        "description": "Adversaries may cause damage and destruction of property to infrastructure, equipment, and the surrounding environment when attacking control systems. This technique may result in device and operational equipment breakdown, or represent tangential damage from other techniques used in an attack. Depending on the severity of physical damage and disruption caused to control processes and systems, this technique may result in [Loss of Safety](https://attack.mitre.org/techniques/T0880). Operations that result in [Loss of Control](https://attack.mitre.org/techniques/T0827) may also cause damage to property, which may be directly or indirectly motivated by an adversary seeking to cause impact in the form of [Loss of Productivity and Revenue](https://attack.mitre.org/techniques/T0828). The German Federal Office for Information Security (BSI) reported a targeted attack on a steel mill under an incidents affecting business section of its 2014 IT Security Report. (Citation: BSI State of IT Security 2014) These targeted attacks affected industrial operations and resulted in breakdowns of control system components and even entire installations. As a result of these breakdowns, massive impact and damage resulted from the uncontrolled shutdown of a blast furnace. A Polish student used a remote controller device to interface with the Lodz city tram system in Poland. (Citation: John Bill May 2017) (Citation: Shelley Smith February 2008) (Citation: Bruce Schneier January 2008) Using this remote, the student was able to capture and replay legitimate tram signals. This resulted in damage to impacted trams, people, and the surrounding property. Reportedly, four trams were derailed and were forced to make emergency stops. (Citation: Shelley Smith February 2008) Commands issued by the student may have also resulted in tram collisions, causing harm to those on board and the environment outside. (Citation: Bruce Schneier January 2008)",
+        "tactics": [
+          {
+            "ta_id": "TA0105",
+            "ta_name": "Impact"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--097924ce-a9a9-4039-8591-e0deedfb8722",
+        "external_id": "T0836",
+        "name": "Modify Parameter",
+        "description": "Adversaries may modify parameters used to instruct industrial control system devices. These devices operate via programs that dictate how and when to perform actions based on such parameters. Such parameters can determine the extent to which an action is performed and may specify additional options. For example, a program on a control system device dictating motor processes may take a parameter defining the total number of seconds to run that motor. An adversary can potentially modify these parameters to produce an outcome outside of what was intended by the operators. By modifying system and process critical parameters, the adversary may cause [Impact](https://attack.mitre.org/tactics/TA0105) to equipment and/or control processes. Modified parameters may be turned into dangerous, out-of-bounds, or unexpected values from typical operations. For example, specifying that a process run for more or less time than it should, or dictating an unusually high, low, or invalid value as a parameter.",
+        "tactics": [
+          {
+            "ta_id": "TA0106",
+            "ta_name": "Impair Process Control"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--8535b71e-3c12-4258-a4ab-40257a1becc4",
+        "external_id": "T0856",
+        "name": "Spoof Reporting Message",
+        "description": "Adversaries may spoof reporting messages in control system environments for evasion and to impair process control. In control systems, reporting messages contain telemetry data (e.g., I/O values) pertaining to the current state of equipment and the industrial process. Reporting messages are important for monitoring the normal operation of a system or identifying important events such as deviations from expected values. If an adversary has the ability to Spoof Reporting Messages, they can impact the control system in many ways. The adversary can Spoof Reporting Messages that state that the process is operating normally, as a form of evasion. The adversary could also Spoof Reporting Messages to make the defenders and operators think that other errors are occurring in order to distract them from the actual source of a problem. (Citation: Bonnie Zhu, Anthony Joseph, Shankar Sastry 2011)",
+        "tactics": [
+          {
+            "ta_id": "TA0103",
+            "ta_name": "Evasion"
+          },
+          {
+            "ta_id": "TA0106",
+            "ta_name": "Impair Process Control"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--e33c7ecc-5a38-497f-beb2-a9a2049a4c20",
+        "external_id": "T0813",
+        "name": "Denial of Control",
+        "description": "Adversaries may cause a denial of control to temporarily prevent operators and engineers from interacting with process controls. An adversary may attempt to deny process control access to cause a temporary loss of communication with the control device or to prevent operator adjustment of process controls. An affected process may still be operating during the period of control loss, but not necessarily in a desired state. (Citation: Corero) (Citation: Michael J. Assante and Robert M. Lee) (Citation: Tyson Macaulay) In the 2017 Dallas Siren incident operators were unable to disable the false alarms from the Office of Emergency Management headquarters. (Citation: Mark Loveless April 2017)",
+        "tactics": [
+          {
+            "ta_id": "TA0105",
+            "ta_name": "Impact"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--2877063e-1851-48d2-bcc6-bc1d2733157e",
+        "external_id": "T0860",
+        "name": "Wireless Compromise",
+        "description": "Adversaries may perform wireless compromise as a method of gaining communications and unauthorized access to a wireless network. Access to a wireless network may be gained through the compromise of a wireless device. (Citation: Alexander Bolshev, Gleb Cherbov July 2014) (Citation: Alexander Bolshev March 2014) Adversaries may also utilize radios and other wireless communication devices on the same frequency as the wireless network. Wireless compromise can be done as an initial access vector from a remote distance. A Polish student used a modified TV remote controller to gain access to and control over the Lodz city tram system in Poland. (Citation: John Bill May 2017) (Citation: Shelley Smith February 2008) The remote controller device allowed the student to interface with the trams network to modify track settings and override operator control. The adversary may have accomplished this by aligning the controller to the frequency and amplitude of IR control protocol signals. (Citation: Bruce Schneier January 2008) The controller then enabled initial access to the network, allowing the capture and replay of tram signals. (Citation: John Bill May 2017)",
+        "tactics": [
+          {
+            "ta_id": "TA0108",
+            "ta_name": "Initial Access"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--b14395bd-5419-4ef4-9bd8-696936f509bb",
+        "external_id": "T0848",
+        "name": "Rogue Master",
+        "description": "Adversaries may setup a rogue master to leverage control server functions to communicate with outstations. A rogue master can be used to send legitimate control messages to other control system devices, affecting processes in unintended ways. It may also be used to disrupt network communications by capturing and receiving the network traffic meant for the actual master. Impersonating a master may also allow an adversary to avoid detection. In the case of the 2017 Dallas Siren incident, adversaries used a rogue master to send command messages to the 156 distributed sirens across the city, either through a single rogue transmitter with a strong signal, or using many distributed repeaters. (Citation: Bastille April 2017) (Citation: Zack Whittaker April 2017)",
+        "tactics": [
+          {
+            "ta_id": "TA0108",
+            "ta_name": "Initial Access"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--2900bbd8-308a-4274-b074-5b8bde8347bc",
+        "external_id": "T0878",
+        "name": "Alarm Suppression",
+        "description": "Adversaries may target protection function alarms to prevent them from notifying operators of critical conditions. Alarm messages may be a part of an overall reporting system and of particular interest for adversaries. Disruption of the alarm system does not imply the disruption of the reporting system as a whole. A Secura presentation on targeting OT notes a dual fold goal for adversaries attempting alarm suppression: prevent outgoing alarms from being raised and prevent incoming alarms from being responded to. (Citation: Jos Wetzels, Marina Krotofil 2019) The method of suppression may greatly depend on the type of alarm in question: * An alarm raised by a protocol message * An alarm signaled with I/O * An alarm bit set in a flag (and read) In ICS environments, the adversary may have to suppress or contend with multiple alarms and/or alarm propagation to achieve a specific goal to evade detection or prevent intended responses from occurring. (Citation: Jos Wetzels, Marina Krotofil 2019) Methods of suppression may involve tampering or altering device displays and logs, modifying in memory code to fixed values, or even tampering with assembly level instruction code.",
+        "tactics": [
+          {
+            "ta_id": "TA0107",
+            "ta_name": "Inhibit Response Function"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--40b300ba-f553-48bf-862e-9471b220d455",
+        "external_id": "T0855",
+        "name": "Unauthorized Command Message",
+        "description": "Adversaries may send unauthorized command messages to instruct control system assets to perform actions outside of their intended functionality, or without the logical preconditions to trigger their expected function. Command messages are used in ICS networks to give direct instructions to control systems devices. If an adversary can send an unauthorized command message to a control system, then it can instruct the control systems device to perform an action outside the normal bounds of the device's actions. An adversary could potentially instruct a control systems device to perform an action that will cause an [Impact](https://attack.mitre.org/tactics/TA0105). (Citation: Bonnie Zhu, Anthony Joseph, Shankar Sastry 2011) In the Dallas Siren incident, adversaries were able to send command messages to activate tornado alarm systems across the city without an impending tornado or other disaster. (Citation: Zack Whittaker April 2017) (Citation: Benjamin Freed March 2019)",
+        "tactics": [
+          {
+            "ta_id": "TA0106",
+            "ta_name": "Impair Process Control"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--56ddc820-6cfb-407f-850b-52c035d123ac",
+        "external_id": "T0815",
+        "name": "Denial of View",
+        "description": "Adversaries may cause a denial of view in attempt to disrupt and prevent operator oversight on the status of an ICS environment. This may manifest itself as a temporary communication failure between a device and its control source, where the interface recovers and becomes available once the interference ceases. (Citation: Corero) (Citation: Michael J. Assante and Robert M. Lee) (Citation: Tyson Macaulay) An adversary may attempt to deny operator visibility by preventing them from receiving status and reporting messages. Denying this view may temporarily block and prevent operators from noticing a change in state or anomalous behavior. The environment's data and processes may still be operational, but functioning in an unintended or adversarial manner.",
+        "tactics": [
+          {
+            "ta_id": "TA0105",
+            "ta_name": "Impact"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stix_id": "campaign--8fda050f-470d-4401-994e-35c1a6c301de",
+    "external_id": "C0031",
+    "type": "campaign",
+    "name": "Unitronics Defacement Campaign",
+    "aliases": [],
+    "platforms": [],
+    "domains": [
+      "ics-attack"
+    ],
+    "description": "The [Unitronics Defacement Campaign](https://attack.mitre.org/campaigns/C0031) was a collection of intrusions across multiple sectors by the [CyberAv3ngers](https://attack.mitre.org/groups/G1027), where threat actors engaged in a seemingly opportunistic and global targeting and defacement of Unitronics Vision Series [Programmable Logic Controller (PLC)](https://attack.mitre.org/assets/A0003) with [Human-Machine Interface (HMI)](https://attack.mitre.org/assets/A0002). The sectors that these PLCs can be commonly found in are water and wastewater, energy, food and beverage manufacturing, and healthcare. The most notable feature of this attack was the defacement of the PLCs' HMIs.(Citation: CISA AA23-335A IRGC-Affiliated December 2023)(Citation: Frank Bajak and Marc Levy December 2023)",
+    "created": "2024-03-25T19:58:53.090Z",
+    "modified": "2024-04-15T19:37:46.084Z",
+    "groups": [
+      {
+        "stix_id": "intrusion-set--a07a367a-146c-45a8-a830-d3d337b9befa",
+        "external_id": "G1027",
+        "name": "CyberAv3ngers"
+      }
+    ],
+    "tools_or_malware_used": [],
+    "techniques": [
+      {
+        "stix_id": "attack-pattern--b5b9bacb-97f2-4249-b804-47fd44de1f95",
+        "external_id": "T0826",
+        "name": "Loss of Availability",
+        "description": "Adversaries may attempt to disrupt essential components or systems to prevent owner and operator from delivering products or services. (Citation: Corero) (Citation: Michael J. Assante and Robert M. Lee) (Citation: Tyson Macaulay) Adversaries may leverage malware to delete or encrypt critical data on HMIs, workstations, or databases. In the 2021 Colonial Pipeline ransomware incident, pipeline operations were temporally halted on May 7th and were not fully restarted until May 12th. (Citation: Colonial Pipeline Company May 2021)",
+        "tactics": [
+          {
+            "ta_id": "TA0105",
+            "ta_name": "Impact"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--1b22b676-9347-4c55-9a35-ef0dc653db5b",
+        "external_id": "T0814",
+        "name": "Denial of Service",
+        "description": "Adversaries may perform Denial-of-Service (DoS) attacks to disrupt expected device functionality. Examples of DoS attacks include overwhelming the target device with a high volume of requests in a short time period and sending the target device a request it does not know how to handle. Disrupting device state may temporarily render it unresponsive, possibly lasting until a reboot can occur. When placed in this state, devices may be unable to send and receive requests, and may not perform expected response functions in reaction to other events in the environment. Some ICS devices are particularly sensitive to DoS events, and may become unresponsive in reaction to even a simple ping sweep. Adversaries may also attempt to execute a Permanent Denial-of-Service (PDoS) against certain devices, such as in the case of the BrickerBot malware. (Citation: ICS-CERT April 2017) Adversaries may exploit a software vulnerability to cause a denial of service by taking advantage of a programming error in a program, service, or within the operating system software or kernel itself to execute adversary-controlled code. Vulnerabilities may exist in software that can be used to cause a denial of service condition. Adversaries may have prior knowledge about industrial protocols or control devices used in the environment through [Remote System Information Discovery](https://attack.mitre.org/techniques/T0888). There are examples of adversaries remotely causing a [Device Restart/Shutdown](https://attack.mitre.org/techniques/T0816) by exploiting a vulnerability that induces uncontrolled resource consumption. (Citation: ICS-CERT August 2018) (Citation: Common Weakness Enumeration January 2019) (Citation: MITRE March 2018)",
+        "tactics": [
+          {
+            "ta_id": "TA0107",
+            "ta_name": "Inhibit Response Function"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--8bb4538f-f16f-49f0-a431-70b5444c7349",
+        "external_id": "T0812",
+        "name": "Default Credentials",
+        "description": "Adversaries may leverage manufacturer or supplier set default credentials on control system devices. These default credentials may have administrative permissions and may be necessary for initial configuration of the device. It is general best practice to change the passwords for these accounts as soon as possible, but some manufacturers may have devices that have passwords or usernames that cannot be changed. (Citation: Keith Stouffer May 2015) Default credentials are normally documented in an instruction manual that is either packaged with the device, published online through official means, or published online through unofficial means. Adversaries may leverage default credentials that have not been properly modified or disabled.",
+        "tactics": [
+          {
+            "ta_id": "TA0109",
+            "ta_name": "Lateral Movement"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--138979ba-0430-4de6-a128-2fc0b056ba36",
+        "external_id": "T0829",
+        "name": "Loss of View",
+        "description": "Adversaries may cause a sustained or permanent loss of view where the ICS equipment will require local, hands-on operator intervention; for instance, a restart or manual operation. By causing a sustained reporting or visibility loss, the adversary can effectively hide the present state of operations. This loss of view can occur without affecting the physical processes themselves. (Citation: Corero) (Citation: Michael J. Assante and Robert M. Lee) (Citation: Tyson Macaulay)",
+        "tactics": [
+          {
+            "ta_id": "TA0105",
+            "ta_name": "Impact"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--f8df6b57-14bc-425f-9a91-6f59f6799307",
+        "external_id": "T0883",
+        "name": "Internet Accessible Device",
+        "description": "Adversaries may gain access into industrial environments through systems exposed directly to the internet for remote access rather than through [External Remote Services](https://attack.mitre.org/techniques/T0822). Internet Accessible Devices are exposed to the internet unintentionally or intentionally without adequate protections. This may allow for adversaries to move directly into the control system network. Access onto these devices is accomplished without the use of exploits, these would be represented within the [Exploit Public-Facing Application](https://attack.mitre.org/techniques/T0819) technique. Adversaries may leverage built in functions for remote access which may not be protected or utilize minimal legacy protections that may be targeted. (Citation: NCCIC January 2014) These services may be discoverable through the use of online scanning tools. In the case of the Bowman dam incident, adversaries leveraged access to the dam control network through a cellular modem. Access to the device was protected by password authentication, although the application was vulnerable to brute forcing. (Citation: NCCIC January 2014) (Citation: Danny Yadron December 2015) (Citation: Mark Thompson March 2016) In Trend Micros manufacturing deception operations adversaries were detected leveraging direct internet access to an ICS environment through the exposure of operational protocols such as Siemens S7, Omron FINS, and EtherNet/IP, in addition to misconfigured VNC access. (Citation: Stephen Hilt, Federico Maggi, Charles Perine, Lord Remorin, Martin Rsler, and Rainer Vosseler)",
+        "tactics": [
+          {
+            "ta_id": "TA0108",
+            "ta_name": "Initial Access"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--63b6942d-8359-4506-bfb3-cf87aa8120ee",
+        "external_id": "T0828",
+        "name": "Loss of Productivity and Revenue",
+        "description": "Adversaries may cause loss of productivity and revenue through disruption and even damage to the availability and integrity of control system operations, devices, and related processes. This technique may manifest as a direct effect of an ICS-targeting attack or tangentially, due to an IT-targeting attack against non-segregated environments. In cases where these operations or services are brought to a halt, the loss of productivity may eventually present an impact for the end-users or consumers of products and services. The disrupted supply-chain may result in supply shortages and increased prices, among other consequences. A ransomware attack on an Australian beverage company resulted in the shutdown of some manufacturing sites, including precautionary halts to protect key systems. (Citation: Paganini, Pierluigi June 2020) The company announced the potential for temporary shortages of their products following the attack. (Citation: Paganini, Pierluigi June 2020) (Citation: Lion Corporation June 2020) In the 2021 Colonial Pipeline ransomware incident, the pipeline was unable to transport approximately 2.5 million barrels of fuel per day to the East Coast. (Citation: Colonial Pipeline Company May 2021)",
+        "tactics": [
+          {
+            "ta_id": "TA0105",
+            "ta_name": "Impact"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stix_id": "campaign--df8eb785-70f8-4300-b444-277ba849083d",
+    "external_id": "C0034",
+    "type": "campaign",
+    "name": "2022 Ukraine Electric Power Attack",
+    "aliases": [],
+    "platforms": [],
+    "domains": [
+      "enterprise-attack",
+      "ics-attack"
+    ],
+    "description": "The [2022 Ukraine Electric Power Attack](https://attack.mitre.org/campaigns/C0034) was a [Sandworm Team](https://attack.mitre.org/groups/G0034) campaign that used a combination of GOGETTER, Neo-REGEORG, [CaddyWiper](https://attack.mitre.org/software/S0693), and living of the land (LotL) techniques to gain access to a Ukrainian electric utility to send unauthorized commands from their SCADA system.(Citation: Mandiant-Sandworm-Ukraine-2022)(Citation: Dragos-Sandworm-Ukraine-2022)",
+    "created": "2024-03-27T19:43:25.703Z",
+    "modified": "2024-04-10T16:02:48.078Z",
+    "groups": [
+      {
+        "stix_id": "intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192",
+        "external_id": "G0034",
+        "name": "Sandworm Team"
+      }
+    ],
+    "tools_or_malware_used": [],
+    "techniques": [
+      {
+        "external_id": "T0831",
+        "name": "Manipulation of Control"
+      },
+      {
+        "stix_id": "attack-pattern--2dc2b567-8821-49f9-9045-8740f3d0b958",
+        "external_id": "T0853",
+        "name": "Scripting",
+        "description": "Adversaries may use scripting languages to execute arbitrary code in the form of a pre-written script or in the form of user-supplied code to an interpreter. Scripting languages are programming languages that differ from compiled languages, in that scripting languages use an interpreter, instead of a compiler. These interpreters read and compile part of the source code just before it is executed, as opposed to compilers, which compile each and every line of code to an executable file. Scripting allows software developers to run their code on any system where the interpreter exists. This way, they can distribute one package, instead of precompiling executables for many different systems. Scripting languages, such as Python, have their interpreters shipped as a default with many Linux distributions. In addition to being a useful tool for developers and administrators, scripting language interpreters may be abused by the adversary to execute code in the target environment. Due to the nature of scripting languages, this allows for weaponized code to be deployed to a target easily, and leaves open the possibility of on-the-fly scripting to perform a task.",
+        "tactics": [
+          {
+            "ta_id": "TA0104",
+            "ta_name": "Execution"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--40b300ba-f553-48bf-862e-9471b220d455",
+        "external_id": "T0855",
+        "name": "Unauthorized Command Message",
+        "description": "Adversaries may send unauthorized command messages to instruct control system assets to perform actions outside of their intended functionality, or without the logical preconditions to trigger their expected function. Command messages are used in ICS networks to give direct instructions to control systems devices. If an adversary can send an unauthorized command message to a control system, then it can instruct the control systems device to perform an action outside the normal bounds of the device's actions. An adversary could potentially instruct a control systems device to perform an action that will cause an [Impact](https://attack.mitre.org/tactics/TA0105). (Citation: Bonnie Zhu, Anthony Joseph, Shankar Sastry 2011) In the Dallas Siren incident, adversaries were able to send command messages to activate tornado alarm systems across the city without an impending tornado or other disaster. (Citation: Zack Whittaker April 2017) (Citation: Benjamin Freed March 2019)",
+        "tactics": [
+          {
+            "ta_id": "TA0106",
+            "ta_name": "Impair Process Control"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--1c5cf58c-a34a-40d7-82f4-f987cdfc2b91",
+        "external_id": "T0894",
+        "name": "System Binary Proxy Execution",
+        "description": "Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed, or otherwise trusted, binaries. Binaries used in this technique are often Microsoft-signed files, indicating that they have been either downloaded from Microsoft or are already native in the operating system. (Citation: LOLBAS Project) Binaries signed with trusted digital certificates can typically execute on Windows systems protected by digital signature validation. Several Microsoft signed binaries that are default on Windows installations can be used to proxy execution of other files or commands. Similarly, on Linux systems adversaries may abuse trusted binaries such as split to proxy execution of malicious commands. (Citation: split man page)(Citation: GTFO split) Adversaries may abuse application binaries installed on a system for proxy execution of malicious code or domain-specific commands. These commands could be used to target local resources on the device or networked devices within the environment through defined APIs ([Execution through API](https://attack.mitre.org/techniques/T0871)) or application-specific programming languages (e.g., MicroSCADA SCIL). Application binaries may be signed by the developer or generally trusted by the operators, analysts, and monitoring tools accustomed to the environment. These applications may be developed and/or directly provided by the device vendor to enable configuration, management, and operation of their devices without many alternatives. Adversaries may seek to target these trusted application binaries to execute or send commands without the development of custom malware. For example, adversaries may target a SCADA server binary which has the existing ability to send commands to substation devices, such as through IEC 104 command messages. Proxy execution may still require the development of custom tools to hook into the application binary\u2019s execution.",
+        "tactics": [
+          {
+            "ta_id": "TA0103",
+            "ta_name": "Evasion"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--77d9c726-b53e-481d-8bcc-1068aebfbb9d",
+        "external_id": "T0895",
+        "name": "Autorun Image",
+        "description": "Adversaries may leverage AutoRun functionality or scripts to execute malicious code. Devices configured to enable AutoRun functionality or legacy operating systems may be susceptible to abuse of these features to run malicious code stored on various forms of removeable media (i.e., USB, Disk Images [.ISO]). Commonly, AutoRun or AutoPlay are disabled in many operating systems configurations to mitigate against this technique. If a device is configured to enable AutoRun or AutoPlay, adversaries may execute code on the device by mounting the removable media to the device, either through physical or virtual means. This may be especially relevant for virtual machine environments where disk images may be dynamically mapped to a guest system on a hypervisor. An example could include an adversary gaining access to a hypervisor through the management interface to modify a virtual machine\u2019s hardware configuration. They could then deploy an iso image with a malicious AutoRun script to cause the virtual machine to automatically execute the code contained on the disk image. This would enable the execution of malicious code within a virtual machine without needing any prior remote access to that system.",
+        "tactics": [
+          {
+            "ta_id": "TA0104",
+            "ta_name": "Execution"
+          }
+        ]
+      },
+      {
+        "stix_id": "attack-pattern--24a9253e-8948-4c98-b751-8e2aee53127c",
+        "external_id": "T0807",
+        "name": "Command-Line Interface",
+        "description": "Adversaries may utilize command-line interfaces (CLIs) to interact with systems and execute commands. CLIs provide a means of interacting with computer systems and are a common feature across many types of platforms and devices within control systems environments. (Citation: Enterprise ATT&CK January 2018) Adversaries may also use CLIs to install and run new software, including malicious tools that may be installed over the course of an operation. CLIs are typically accessed locally, but can also be exposed via services, such as SSH, Telnet, and RDP. Commands that are executed in the CLI execute with the current permissions level of the process running the terminal emulator, unless the command specifies a change in permissions context. Many controllers have CLI interfaces for management purposes.",
+        "tactics": [
+          {
+            "ta_id": "TA0104",
+            "ta_name": "Execution"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "pH Sensor Spoofing Attack (Urbina Testbed)",
+    "external_id": "A-PH-001",
+    "type": "attack-scenario",
+    "techniques": [
+      {
+        "external_id": "T0884",
+        "name": "Connection Proxy"
+      },
+      {
+        "external_id": "T0856",
+        "name": "Spoof Reporting Message"
+      },
+      {
+        "external_id": "T0831",
+        "name": "Manipulation of Control"
+      },
+      {
+        "external_id": "T0836",
+        "name": "Modify Parameter"
+      },
+      {
+        "external_id": "T0835",
+        "name": "Manipulate I/O Image"
+      },
+      {
+        "external_id": "T0885",
+        "name": "Commonly Used Port"
+      },
+      {
+        "external_id": "T0840",
+        "name": "Network Connection Enumeration"
+      }
+    ]
+  },
+  {
+    "name": "Pump Actuator Manipulation Attack (Urbina Testbed)",
+    "external_id": "A-PUMP-002",
+    "type": "attack-scenario",
+    "techniques": [
+      {
+        "external_id": "T0884",
+        "name": "Connection Proxy"
+      },
+      {
+        "external_id": "T0803",
+        "name": "Block Command Message"
+      },
+      {
+        "external_id": "T0856",
+        "name": "Spoof Reporting Message"
+      },
+      {
+        "external_id": "T0831",
+        "name": "Manipulation of Control"
+      },
+      {
+        "external_id": "T0835",
+        "name": "Manipulate I/O Image"
+      },
+      {
+        "external_id": "T0885",
+        "name": "Commonly Used Port"
+      },
+      {
+        "external_id": "T0840",
+        "name": "Network Connection Enumeration"
+      }
+    ]
+  },
+  {
+    "name": "Oldsmar Water Treatment Attack",
+    "external_id": "A-OLD-2021",
+    "type": "campaign",
+    "techniques": [
+      {
+        "external_id": "T0886",
+        "name": "Remote Services"
+      },
+      {
+        "external_id": "T0859",
+        "name": "Valid Accounts"
+      },
+      {
+        "external_id": "T0823",
+        "name": "Graphical User Interface"
+      },
+      {
+        "external_id": "T0836",
+        "name": "Modify Parameter"
+      },
+      {
+        "external_id": "T0831",
+        "name": "Manipulation of Control"
+      }
+    ]
+  },
+  {
+    "name": "Stuxnet",
+    "external_id": "A-STX-2010",
+    "type": "campaign",
+    "techniques": [
+      {
+        "external_id": "T0847",
+        "name": "Replication Through Removable Media"
+      },
+      {
+        "external_id": "T0863",
+        "name": "User Execution"
+      },
+      {
+        "external_id": "T0849",
+        "name": "Masquerading"
+      },
+      {
+        "external_id": "T0851",
+        "name": "Rootkit"
+      },
+      {
+        "external_id": "T0874",
+        "name": "Hooking"
+      },
+      {
+        "external_id": "T0873",
+        "name": "Project File Infection"
+      },
+      {
+        "external_id": "T0843",
+        "name": "Program Download"
+      },
+      {
+        "external_id": "T0889",
+        "name": "Modify Program"
+      },
+      {
+        "external_id": "T0821",
+        "name": "Modify Controller Tasking"
+      },
+      {
+        "external_id": "T0835",
+        "name": "Manipulate I/O Image"
+      },
+      {
+        "external_id": "T0832",
+        "name": "Manipulation of View"
+      },
+      {
+        "external_id": "T0856",
+        "name": "Spoof Reporting Message"
+      },
+      {
+        "external_id": "T0831",
+        "name": "Manipulation of Control"
+      },
+      {
+        "external_id": "T0837",
+        "name": "Loss of Protection"
+      },
+      {
+        "external_id": "T0879",
+        "name": "Damage to Property"
+      }
+    ]
+  },
+  {
+    "name": "German Steel Mill Attack (2014)",
+    "external_id": "A-GSM-2014",
+    "type": "campaign",
+    "techniques": [
+      {
+        "external_id": "T0886",
+        "name": "Remote Services",
+        "confidence": "reconstructed"
+      },
+      {
+        "external_id": "T0859",
+        "name": "Valid Accounts",
+        "confidence": "reconstructed"
+      },
+      {
+        "external_id": "T0823",
+        "name": "Graphical User Interface",
+        "confidence": "reconstructed"
+      },
+      {
+        "external_id": "T0836",
+        "name": "Modify Parameter",
+        "confidence": "reconstructed"
+      },
+      {
+        "external_id": "T0827",
+        "name": "Loss of Control"
+      },
+      {
+        "external_id": "T0831",
+        "name": "Manipulation of Control"
+      },
+      {
+        "external_id": "T0826",
+        "name": "Loss of Availability"
+      },
+      {
+        "external_id": "T0879",
+        "name": "Damage to Property"
+      }
+    ]
+  },
+  {
+    "name": "Dallas Emergency Siren Attack (2017)",
+    "external_id": "A-DAL-2017",
+    "type": "campaign",
+    "techniques": [
+      {
+        "external_id": "T0860",
+        "name": "Wireless Compromise"
+      },
+      {
+        "external_id": "T0855",
+        "name": "Unauthorized Command Message"
+      },
+      {
+        "external_id": "T0827",
+        "name": "Loss of Control"
+      },
+      {
+        "external_id": "T0826",
+        "name": "Loss of Availability"
+      }
+    ]
+  }
+]

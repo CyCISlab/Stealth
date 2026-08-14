@@ -1,0 +1,8 @@
+Sweep,"o,d,c scheme",x,Spearman rho vs baseline,p,Top five
+x-sweep,equal,0.3,0.824,0.00054,2015 Ukraine Electric Power Attack; Triton Safety Instrumented System Attack; 2016 Ukraine Electric Power Attack; Stuxnet; pH Sensor Spoofing Attack (Urbina Testbed)
+x-sweep,equal,0.5,1.0,0.0,pH Sensor Spoofing Attack (Urbina Testbed); Pump Actuator Manipulation Attack (Urbina Testbed); 2015 Ukraine Electric Power Attack; Stuxnet; Triton Safety Instrumented System Attack
+x-sweep,equal,0.7,0.994,0.0,pH Sensor Spoofing Attack (Urbina Testbed); Pump Actuator Manipulation Attack (Urbina Testbed); Stuxnet; 2015 Ukraine Electric Power Attack; Triton Safety Instrumented System Attack
+scheme-sweep,equal,0.5,1.0,0.0,pH Sensor Spoofing Attack (Urbina Testbed); Pump Actuator Manipulation Attack (Urbina Testbed); 2015 Ukraine Electric Power Attack; Stuxnet; Triton Safety Instrumented System Attack
+scheme-sweep,intervention,0.5,0.993,0.0,pH Sensor Spoofing Attack (Urbina Testbed); Pump Actuator Manipulation Attack (Urbina Testbed); 2015 Ukraine Electric Power Attack; Triton Safety Instrumented System Attack; Stuxnet
+scheme-sweep,damage,0.5,0.977,0.0,pH Sensor Spoofing Attack (Urbina Testbed); Pump Actuator Manipulation Attack (Urbina Testbed); Stuxnet; 2015 Ukraine Electric Power Attack; Triton Safety Instrumented System Attack
+scheme-sweep,cascading,0.5,0.994,0.0,pH Sensor Spoofing Attack (Urbina Testbed); Pump Actuator Manipulation Attack (Urbina Testbed); 2015 Ukraine Electric Power Attack; Stuxnet; Triton Safety Instrumented System Attack

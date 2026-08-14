@@ -1,0 +1,15 @@
+asset_id,asset_name,purdue_level,dimension
+A0001,Workstation,Level 4,Cyber
+A0002,Human-Machine Interface (HMI),Level 2,Operational
+A0003,Programmable Logic Controller (PLC),Level 1,Physical
+A0004,Remote Terminal Unit (RTU),Level 1,Physical
+A0005,Intelligent Electronic Device (IED),Level 1,Physical
+A0006,Data Historian,Level 3,Cyber
+A0007,Control Server,Level 2,Operational
+A0008,Application Server,Level 3,Cyber
+A0009,Data Gateway,Level 2,Operational
+A0010,Safety Controller,Level 1,Physical
+A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+A0012,Jump Host,Level 3.5,Cyber
+A0013,Field I/O,Level 0,Physical
+A0014,Routers,Level 4,Cyber

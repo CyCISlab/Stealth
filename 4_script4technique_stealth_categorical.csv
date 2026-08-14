@@ -1,0 +1,84 @@
+Technique ID,Technique Name,Targeted Dimensions,Activity Size,Detectable Dimensions,Gap,Gap Size,Stealth Label
+T0800,Activate Firmware Update Mode,"Operational, Physical",2,"Cyber, Operational, Physical",,0,No Gap
+T0801,Monitor Process State,"Cyber, Operational, Physical",3,"Cyber, Operational",Physical,1,Low
+T0802,Automated Collection,"Cyber, Operational, Physical",3,Cyber,"Operational, Physical",2,Medium
+T0803,Block Command Message,"Operational, Physical",2,"Cyber, Operational, Physical",,0,No Gap
+T0804,Block Reporting Message,"Operational, Physical",2,"Cyber, Operational, Physical",,0,No Gap
+T0805,Block Serial COM,"Cyber, Operational, Physical",3,"Cyber, Operational, Physical",,0,No Gap
+T0806,Brute Force I/O,"Operational, Physical",2,"Cyber, Operational, Physical",,0,No Gap
+T0807,Command-Line Interface,"Cyber, Operational",2,"Cyber, Operational",,0,No Gap
+T0809,Data Destruction,"Cyber, Operational, Physical",3,Cyber,"Operational, Physical",2,Medium
+T0811,Data from Information Repositories,"Cyber, Operational",2,"Cyber, Operational",,0,No Gap
+T0812,Default Credentials,"Cyber, Operational, Physical",3,"Cyber, Operational",Physical,1,Low
+T0813,Denial of Control,,0,,,0,No Gap
+T0814,Denial of Service,"Cyber, Operational, Physical",3,"Cyber, Operational, Physical",,0,No Gap
+T0815,Denial of View,,0,,,0,No Gap
+T0816,Device Restart/Shutdown,"Cyber, Operational, Physical",3,"Cyber, Operational, Physical",,0,No Gap
+T0817,Drive-by Compromise,Cyber,1,"Cyber, Operational",,0,No Gap
+T0819,Exploit Public-Facing Application,Cyber,1,"Cyber, Operational",,0,No Gap
+T0820,Exploitation for Evasion,"Cyber, Operational, Physical",3,Operational,"Cyber, Physical",2,Medium
+T0821,Modify Controller Tasking,Physical,1,"Operational, Physical",,0,No Gap
+T0822,External Remote Services,"Cyber, Operational",2,"Cyber, Operational",,0,No Gap
+T0823,Graphical User Interface,"Cyber, Operational",2,"Cyber, Operational",,0,No Gap
+T0826,Loss of Availability,,0,,,0,No Gap
+T0827,Loss of Control,,0,,,0,No Gap
+T0828,Loss of Productivity and Revenue,,0,,,0,No Gap
+T0829,Loss of View,,0,,,0,No Gap
+T0830,Adversary-in-the-Middle,"Cyber, Operational, Physical",3,"Cyber, Operational",Physical,1,Low
+T0831,Manipulation of Control,,0,,,0,No Gap
+T0832,Manipulation of View,,0,,,0,No Gap
+T0834,Native API,"Cyber, Operational, Physical",3,Cyber,"Operational, Physical",2,Medium
+T0835,Manipulate I/O Image,Physical,1,Operational,Physical,1,Low
+T0836,Modify Parameter,Physical,1,"Cyber, Operational, Physical",,0,No Gap
+T0837,Loss of Protection,,0,,,0,No Gap
+T0838,Modify Alarm Settings,"Operational, Physical",2,"Cyber, Operational, Physical",,0,No Gap
+T0839,Module Firmware,Physical,1,"Cyber, Operational, Physical",,0,No Gap
+T0840,Network Connection Enumeration,"Cyber, Operational, Physical",3,Cyber,"Operational, Physical",2,Medium
+T0842,Network Sniffing,"Cyber, Operational, Physical",3,Cyber,"Operational, Physical",2,Medium
+T0843,Program Download,Physical,1,"Cyber, Operational, Physical",,0,No Gap
+T0845,Program Upload,Physical,1,"Cyber, Operational",Physical,1,Low
+T0846,Remote System Discovery,"Cyber, Operational, Physical",3,Cyber,"Operational, Physical",2,Medium
+T0847,Replication Through Removable Media,"Cyber, Operational, Physical",3,"Cyber, Operational",Physical,1,Low
+T0848,Rogue Master,"Cyber, Operational, Physical",3,"Cyber, Operational, Physical",,0,No Gap
+T0849,Masquerading,"Cyber, Operational",2,"Cyber, Operational",,0,No Gap
+T0851,Rootkit,"Cyber, Operational, Physical",3,Physical,"Cyber, Operational",2,Medium
+T0852,Screen Capture,"Cyber, Operational",2,Cyber,Operational,1,Low
+T0853,Scripting,"Cyber, Operational",2,Cyber,Operational,1,Low
+T0855,Unauthorized Command Message,"Operational, Physical",2,"Cyber, Operational, Physical",,0,No Gap
+T0856,Spoof Reporting Message,"Operational, Physical",2,"Cyber, Physical",Operational,1,Low
+T0857,System Firmware,"Cyber, Operational, Physical",3,"Cyber, Operational, Physical",,0,No Gap
+T0858,Change Operating Mode,Physical,1,"Cyber, Operational, Physical",,0,No Gap
+T0859,Valid Accounts,"Cyber, Operational, Physical",3,"Cyber, Operational",Physical,1,Low
+T0860,Wireless Compromise,"Cyber, Physical",2,"Cyber, Operational",Physical,1,Low
+T0861,Point & Tag Identification,"Cyber, Operational, Physical",3,"Cyber, Operational",Physical,1,Low
+T0862,Supply Chain Compromise,"Cyber, Operational, Physical",3,Cyber,"Operational, Physical",2,Medium
+T0863,User Execution,"Cyber, Operational",2,"Cyber, Operational",,0,No Gap
+T0864,Transient Cyber Asset,Cyber,1,"Cyber, Operational",,0,No Gap
+T0865,Spearphishing Attachment,Cyber,1,"Cyber, Operational",,0,No Gap
+T0866,Exploitation of Remote Services,"Cyber, Operational, Physical",3,"Cyber, Operational",Physical,1,Low
+T0867,Lateral Tool Transfer,"Cyber, Operational, Physical",3,Cyber,"Operational, Physical",2,Medium
+T0868,Detect Operating Mode,Physical,1,Cyber,Physical,1,Low
+T0869,Standard Application Layer Protocol,"Cyber, Operational, Physical",3,Cyber,"Operational, Physical",2,Medium
+T0871,Execution through API,"Cyber, Operational, Physical",3,Cyber,"Operational, Physical",2,Medium
+T0872,Indicator Removal on Host,"Cyber, Operational, Physical",3,Cyber,"Operational, Physical",2,Medium
+T0873,Project File Infection,Cyber,1,Cyber,,0,No Gap
+T0874,Hooking,"Cyber, Operational, Physical",3,Cyber,"Operational, Physical",2,Medium
+T0877,I/O Image,Physical,1,Operational,Physical,1,Low
+T0878,Alarm Suppression,"Cyber, Operational, Physical",3,"Cyber, Physical",Operational,1,Low
+T0879,Damage to Property,,0,,,0,No Gap
+T0880,Loss of Safety,,0,,,0,No Gap
+T0881,Service Stop,"Cyber, Operational, Physical",3,"Cyber, Operational",Physical,1,Low
+T0882,Theft of Operational Information,,0,,,0,No Gap
+T0883,Internet Accessible Device,Cyber,1,"Cyber, Operational",,0,No Gap
+T0884,Connection Proxy,"Cyber, Operational, Physical",3,Cyber,"Operational, Physical",2,Medium
+T0885,Commonly Used Port,"Cyber, Operational, Physical",3,Cyber,"Operational, Physical",2,Medium
+T0886,Remote Services,"Cyber, Operational",2,"Cyber, Operational",,0,No Gap
+T0887,Wireless Sniffing,"Cyber, Physical",2,Cyber,Physical,1,Low
+T0888,Remote System Information Discovery,"Cyber, Operational, Physical",3,Cyber,"Operational, Physical",2,Medium
+T0889,Modify Program,Physical,1,"Cyber, Operational, Physical",,0,No Gap
+T0890,Exploitation for Privilege Escalation,"Cyber, Operational, Physical",3,Operational,"Cyber, Physical",2,Medium
+T0891,Hardcoded Credentials,Physical,1,"Cyber, Operational",Physical,1,Low
+T0892,Change Credential,"Cyber, Operational, Physical",3,"Cyber, Physical",Operational,1,Low
+T0893,Data from Local System,"Cyber, Operational",2,Cyber,Operational,1,Low
+T0894,System Binary Proxy Execution,"Cyber, Operational",2,Cyber,Operational,1,Low
+T0895,Autorun Image,"Cyber, Operational",2,"Cyber, Operational",,0,No Gap

@@ -1,0 +1,537 @@
+Technique Name,Technique ID,Asset ID,Asset Name,Purdue Level,Dimension
+Activate Firmware Update Mode,T0800,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Activate Firmware Update Mode,T0800,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Activate Firmware Update Mode,T0800,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Activate Firmware Update Mode,T0800,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Activate Firmware Update Mode,T0800,A0009,Data Gateway,Level 2,Operational
+Activate Firmware Update Mode,T0800,A0010,Safety Controller,Level 1,Physical
+Activate Firmware Update Mode,T0800,A0013,Field I/O,Level 0,Physical
+Monitor Process State,T0801,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Monitor Process State,T0801,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Monitor Process State,T0801,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Monitor Process State,T0801,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Monitor Process State,T0801,A0006,Data Historian,Level 3,Cyber
+Monitor Process State,T0801,A0007,Control Server,Level 2,Operational
+Monitor Process State,T0801,A0009,Data Gateway,Level 2,Operational
+Monitor Process State,T0801,A0010,Safety Controller,Level 1,Physical
+Monitor Process State,T0801,A0013,Field I/O,Level 0,Physical
+Automated Collection,T0802,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Automated Collection,T0802,A0006,Data Historian,Level 3,Cyber
+Automated Collection,T0802,A0007,Control Server,Level 2,Operational
+Block Command Message,T0803,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Block Command Message,T0803,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Block Command Message,T0803,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Block Command Message,T0803,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Block Command Message,T0803,A0007,Control Server,Level 2,Operational
+Block Command Message,T0803,A0010,Safety Controller,Level 1,Physical
+Block Command Message,T0803,A0013,Field I/O,Level 0,Physical
+Block Reporting Message,T0804,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Block Reporting Message,T0804,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Block Reporting Message,T0804,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Block Reporting Message,T0804,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Block Reporting Message,T0804,A0007,Control Server,Level 2,Operational
+Block Reporting Message,T0804,A0009,Data Gateway,Level 2,Operational
+Block Reporting Message,T0804,A0010,Safety Controller,Level 1,Physical
+Block Reporting Message,T0804,A0013,Field I/O,Level 0,Physical
+Block Serial COM,T0805,A0001,Workstation,Level 4,Cyber
+Block Serial COM,T0805,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Block Serial COM,T0805,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Block Serial COM,T0805,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Block Serial COM,T0805,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Block Serial COM,T0805,A0007,Control Server,Level 2,Operational
+Block Serial COM,T0805,A0009,Data Gateway,Level 2,Operational
+Block Serial COM,T0805,A0010,Safety Controller,Level 1,Physical
+Block Serial COM,T0805,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Block Serial COM,T0805,A0012,Jump Host,Level 3.5,Cyber
+Block Serial COM,T0805,A0013,Field I/O,Level 0,Physical
+Brute Force I/O,T0806,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Brute Force I/O,T0806,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Brute Force I/O,T0806,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Brute Force I/O,T0806,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Brute Force I/O,T0806,A0007,Control Server,Level 2,Operational
+Brute Force I/O,T0806,A0010,Safety Controller,Level 1,Physical
+Command-Line Interface,T0807,A0001,Workstation,Level 4,Cyber
+Command-Line Interface,T0807,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Command-Line Interface,T0807,A0006,Data Historian,Level 3,Cyber
+Command-Line Interface,T0807,A0007,Control Server,Level 2,Operational
+Command-Line Interface,T0807,A0008,Application Server,Level 3,Cyber
+Command-Line Interface,T0807,A0009,Data Gateway,Level 2,Operational
+Command-Line Interface,T0807,A0012,Jump Host,Level 3.5,Cyber
+Data Destruction,T0809,A0001,Workstation,Level 4,Cyber
+Data Destruction,T0809,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Data Destruction,T0809,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Data Destruction,T0809,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Data Destruction,T0809,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Data Destruction,T0809,A0006,Data Historian,Level 3,Cyber
+Data Destruction,T0809,A0007,Control Server,Level 2,Operational
+Data Destruction,T0809,A0008,Application Server,Level 3,Cyber
+Data Destruction,T0809,A0009,Data Gateway,Level 2,Operational
+Data Destruction,T0809,A0010,Safety Controller,Level 1,Physical
+Data Destruction,T0809,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Data Destruction,T0809,A0012,Jump Host,Level 3.5,Cyber
+Data Destruction,T0809,A0013,Field I/O,Level 0,Physical
+Data Destruction,T0809,A0014,Routers,Level 4,Cyber
+Data from Information Repositories,T0811,A0006,Data Historian,Level 3,Cyber
+Data from Information Repositories,T0811,A0007,Control Server,Level 2,Operational
+Default Credentials,T0812,A0001,Workstation,Level 4,Cyber
+Default Credentials,T0812,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Default Credentials,T0812,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Default Credentials,T0812,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Default Credentials,T0812,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Default Credentials,T0812,A0006,Data Historian,Level 3,Cyber
+Default Credentials,T0812,A0007,Control Server,Level 2,Operational
+Default Credentials,T0812,A0008,Application Server,Level 3,Cyber
+Default Credentials,T0812,A0009,Data Gateway,Level 2,Operational
+Default Credentials,T0812,A0010,Safety Controller,Level 1,Physical
+Default Credentials,T0812,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Default Credentials,T0812,A0012,Jump Host,Level 3.5,Cyber
+Default Credentials,T0812,A0013,Field I/O,Level 0,Physical
+Default Credentials,T0812,A0014,Routers,Level 4,Cyber
+Denial of Control,T0813,,,,
+Denial of Service,T0814,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Denial of Service,T0814,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Denial of Service,T0814,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Denial of Service,T0814,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Denial of Service,T0814,A0006,Data Historian,Level 3,Cyber
+Denial of Service,T0814,A0007,Control Server,Level 2,Operational
+Denial of Service,T0814,A0009,Data Gateway,Level 2,Operational
+Denial of Service,T0814,A0010,Safety Controller,Level 1,Physical
+Denial of Service,T0814,A0012,Jump Host,Level 3.5,Cyber
+Denial of Service,T0814,A0013,Field I/O,Level 0,Physical
+Denial of View,T0815,,,,
+Device Restart/Shutdown,T0816,A0001,Workstation,Level 4,Cyber
+Device Restart/Shutdown,T0816,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Device Restart/Shutdown,T0816,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Device Restart/Shutdown,T0816,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Device Restart/Shutdown,T0816,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Device Restart/Shutdown,T0816,A0006,Data Historian,Level 3,Cyber
+Device Restart/Shutdown,T0816,A0007,Control Server,Level 2,Operational
+Device Restart/Shutdown,T0816,A0008,Application Server,Level 3,Cyber
+Device Restart/Shutdown,T0816,A0009,Data Gateway,Level 2,Operational
+Device Restart/Shutdown,T0816,A0010,Safety Controller,Level 1,Physical
+Device Restart/Shutdown,T0816,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Device Restart/Shutdown,T0816,A0012,Jump Host,Level 3.5,Cyber
+Device Restart/Shutdown,T0816,A0013,Field I/O,Level 0,Physical
+Device Restart/Shutdown,T0816,A0014,Routers,Level 4,Cyber
+Drive-by Compromise,T0817,A0001,Workstation,Level 4,Cyber
+Exploit Public-Facing Application,T0819,A0001,Workstation,Level 4,Cyber
+Exploit Public-Facing Application,T0819,A0008,Application Server,Level 3,Cyber
+Exploit Public-Facing Application,T0819,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Exploitation for Evasion,T0820,A0001,Workstation,Level 4,Cyber
+Exploitation for Evasion,T0820,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Exploitation for Evasion,T0820,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Exploitation for Evasion,T0820,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Exploitation for Evasion,T0820,A0006,Data Historian,Level 3,Cyber
+Exploitation for Evasion,T0820,A0007,Control Server,Level 2,Operational
+Exploitation for Evasion,T0820,A0008,Application Server,Level 3,Cyber
+Exploitation for Evasion,T0820,A0009,Data Gateway,Level 2,Operational
+Exploitation for Evasion,T0820,A0010,Safety Controller,Level 1,Physical
+Exploitation for Evasion,T0820,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Exploitation for Evasion,T0820,A0012,Jump Host,Level 3.5,Cyber
+Exploitation for Evasion,T0820,A0014,Routers,Level 4,Cyber
+Modify Controller Tasking,T0821,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Modify Controller Tasking,T0821,A0010,Safety Controller,Level 1,Physical
+External Remote Services,T0822,A0006,Data Historian,Level 3,Cyber
+External Remote Services,T0822,A0008,Application Server,Level 3,Cyber
+External Remote Services,T0822,A0009,Data Gateway,Level 2,Operational
+External Remote Services,T0822,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+External Remote Services,T0822,A0012,Jump Host,Level 3.5,Cyber
+External Remote Services,T0822,A0014,Routers,Level 4,Cyber
+Graphical User Interface,T0823,A0001,Workstation,Level 4,Cyber
+Graphical User Interface,T0823,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Graphical User Interface,T0823,A0006,Data Historian,Level 3,Cyber
+Graphical User Interface,T0823,A0007,Control Server,Level 2,Operational
+Graphical User Interface,T0823,A0008,Application Server,Level 3,Cyber
+Graphical User Interface,T0823,A0009,Data Gateway,Level 2,Operational
+Graphical User Interface,T0823,A0012,Jump Host,Level 3.5,Cyber
+Loss of Availability,T0826,,,,
+Loss of Control,T0827,,,,
+Loss of Productivity and Revenue,T0828,,,,
+Loss of View,T0829,,,,
+Adversary-in-the-Middle,T0830,A0001,Workstation,Level 4,Cyber
+Adversary-in-the-Middle,T0830,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Adversary-in-the-Middle,T0830,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Adversary-in-the-Middle,T0830,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Adversary-in-the-Middle,T0830,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Adversary-in-the-Middle,T0830,A0006,Data Historian,Level 3,Cyber
+Adversary-in-the-Middle,T0830,A0007,Control Server,Level 2,Operational
+Adversary-in-the-Middle,T0830,A0008,Application Server,Level 3,Cyber
+Adversary-in-the-Middle,T0830,A0009,Data Gateway,Level 2,Operational
+Adversary-in-the-Middle,T0830,A0010,Safety Controller,Level 1,Physical
+Adversary-in-the-Middle,T0830,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Adversary-in-the-Middle,T0830,A0012,Jump Host,Level 3.5,Cyber
+Adversary-in-the-Middle,T0830,A0013,Field I/O,Level 0,Physical
+Adversary-in-the-Middle,T0830,A0014,Routers,Level 4,Cyber
+Manipulation of Control,T0831,,,,
+Manipulation of View,T0832,,,,
+Native API,T0834,A0001,Workstation,Level 4,Cyber
+Native API,T0834,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Native API,T0834,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Native API,T0834,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Native API,T0834,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Native API,T0834,A0006,Data Historian,Level 3,Cyber
+Native API,T0834,A0007,Control Server,Level 2,Operational
+Native API,T0834,A0008,Application Server,Level 3,Cyber
+Native API,T0834,A0009,Data Gateway,Level 2,Operational
+Native API,T0834,A0010,Safety Controller,Level 1,Physical
+Native API,T0834,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Native API,T0834,A0012,Jump Host,Level 3.5,Cyber
+Native API,T0834,A0013,Field I/O,Level 0,Physical
+Manipulate I/O Image,T0835,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Manipulate I/O Image,T0835,A0010,Safety Controller,Level 1,Physical
+Modify Parameter,T0836,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Modify Parameter,T0836,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Modify Parameter,T0836,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Loss of Protection,T0837,,,,
+Modify Alarm Settings,T0838,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Modify Alarm Settings,T0838,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Modify Alarm Settings,T0838,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Modify Alarm Settings,T0838,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Modify Alarm Settings,T0838,A0009,Data Gateway,Level 2,Operational
+Modify Alarm Settings,T0838,A0010,Safety Controller,Level 1,Physical
+Module Firmware,T0839,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Module Firmware,T0839,A0010,Safety Controller,Level 1,Physical
+Network Connection Enumeration,T0840,A0001,Workstation,Level 4,Cyber
+Network Connection Enumeration,T0840,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Network Connection Enumeration,T0840,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Network Connection Enumeration,T0840,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Network Connection Enumeration,T0840,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Network Connection Enumeration,T0840,A0006,Data Historian,Level 3,Cyber
+Network Connection Enumeration,T0840,A0007,Control Server,Level 2,Operational
+Network Connection Enumeration,T0840,A0008,Application Server,Level 3,Cyber
+Network Connection Enumeration,T0840,A0009,Data Gateway,Level 2,Operational
+Network Connection Enumeration,T0840,A0010,Safety Controller,Level 1,Physical
+Network Connection Enumeration,T0840,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Network Connection Enumeration,T0840,A0012,Jump Host,Level 3.5,Cyber
+Network Sniffing,T0842,A0001,Workstation,Level 4,Cyber
+Network Sniffing,T0842,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Network Sniffing,T0842,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Network Sniffing,T0842,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Network Sniffing,T0842,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Network Sniffing,T0842,A0006,Data Historian,Level 3,Cyber
+Network Sniffing,T0842,A0007,Control Server,Level 2,Operational
+Network Sniffing,T0842,A0008,Application Server,Level 3,Cyber
+Network Sniffing,T0842,A0009,Data Gateway,Level 2,Operational
+Network Sniffing,T0842,A0010,Safety Controller,Level 1,Physical
+Network Sniffing,T0842,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Network Sniffing,T0842,A0012,Jump Host,Level 3.5,Cyber
+Program Download,T0843,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Program Download,T0843,A0010,Safety Controller,Level 1,Physical
+Program Upload,T0845,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Program Upload,T0845,A0010,Safety Controller,Level 1,Physical
+Remote System Discovery,T0846,A0001,Workstation,Level 4,Cyber
+Remote System Discovery,T0846,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Remote System Discovery,T0846,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Remote System Discovery,T0846,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Remote System Discovery,T0846,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Remote System Discovery,T0846,A0006,Data Historian,Level 3,Cyber
+Remote System Discovery,T0846,A0007,Control Server,Level 2,Operational
+Remote System Discovery,T0846,A0008,Application Server,Level 3,Cyber
+Remote System Discovery,T0846,A0009,Data Gateway,Level 2,Operational
+Remote System Discovery,T0846,A0010,Safety Controller,Level 1,Physical
+Remote System Discovery,T0846,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Remote System Discovery,T0846,A0012,Jump Host,Level 3.5,Cyber
+Replication Through Removable Media,T0847,A0001,Workstation,Level 4,Cyber
+Replication Through Removable Media,T0847,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Replication Through Removable Media,T0847,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Replication Through Removable Media,T0847,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Replication Through Removable Media,T0847,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Replication Through Removable Media,T0847,A0006,Data Historian,Level 3,Cyber
+Replication Through Removable Media,T0847,A0007,Control Server,Level 2,Operational
+Replication Through Removable Media,T0847,A0008,Application Server,Level 3,Cyber
+Replication Through Removable Media,T0847,A0009,Data Gateway,Level 2,Operational
+Replication Through Removable Media,T0847,A0010,Safety Controller,Level 1,Physical
+Replication Through Removable Media,T0847,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Replication Through Removable Media,T0847,A0012,Jump Host,Level 3.5,Cyber
+Replication Through Removable Media,T0847,A0013,Field I/O,Level 0,Physical
+Rogue Master,T0848,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Rogue Master,T0848,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Rogue Master,T0848,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Rogue Master,T0848,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Rogue Master,T0848,A0006,Data Historian,Level 3,Cyber
+Rogue Master,T0848,A0007,Control Server,Level 2,Operational
+Rogue Master,T0848,A0009,Data Gateway,Level 2,Operational
+Rogue Master,T0848,A0010,Safety Controller,Level 1,Physical
+Masquerading,T0849,A0001,Workstation,Level 4,Cyber
+Masquerading,T0849,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Masquerading,T0849,A0006,Data Historian,Level 3,Cyber
+Masquerading,T0849,A0007,Control Server,Level 2,Operational
+Masquerading,T0849,A0008,Application Server,Level 3,Cyber
+Masquerading,T0849,A0009,Data Gateway,Level 2,Operational
+Masquerading,T0849,A0012,Jump Host,Level 3.5,Cyber
+Rootkit,T0851,A0001,Workstation,Level 4,Cyber
+Rootkit,T0851,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Rootkit,T0851,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Rootkit,T0851,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Rootkit,T0851,A0006,Data Historian,Level 3,Cyber
+Rootkit,T0851,A0007,Control Server,Level 2,Operational
+Rootkit,T0851,A0008,Application Server,Level 3,Cyber
+Rootkit,T0851,A0009,Data Gateway,Level 2,Operational
+Rootkit,T0851,A0010,Safety Controller,Level 1,Physical
+Rootkit,T0851,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Rootkit,T0851,A0012,Jump Host,Level 3.5,Cyber
+Rootkit,T0851,A0013,Field I/O,Level 0,Physical
+Screen Capture,T0852,A0001,Workstation,Level 4,Cyber
+Screen Capture,T0852,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Screen Capture,T0852,A0012,Jump Host,Level 3.5,Cyber
+Scripting,T0853,A0001,Workstation,Level 4,Cyber
+Scripting,T0853,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Scripting,T0853,A0006,Data Historian,Level 3,Cyber
+Scripting,T0853,A0007,Control Server,Level 2,Operational
+Scripting,T0853,A0008,Application Server,Level 3,Cyber
+Scripting,T0853,A0009,Data Gateway,Level 2,Operational
+Scripting,T0853,A0012,Jump Host,Level 3.5,Cyber
+Unauthorized Command Message,T0855,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Unauthorized Command Message,T0855,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Unauthorized Command Message,T0855,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Unauthorized Command Message,T0855,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Unauthorized Command Message,T0855,A0007,Control Server,Level 2,Operational
+Unauthorized Command Message,T0855,A0010,Safety Controller,Level 1,Physical
+Spoof Reporting Message,T0856,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Spoof Reporting Message,T0856,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Spoof Reporting Message,T0856,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Spoof Reporting Message,T0856,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Spoof Reporting Message,T0856,A0007,Control Server,Level 2,Operational
+Spoof Reporting Message,T0856,A0009,Data Gateway,Level 2,Operational
+Spoof Reporting Message,T0856,A0010,Safety Controller,Level 1,Physical
+System Firmware,T0857,A0002,Human-Machine Interface (HMI),Level 2,Operational
+System Firmware,T0857,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+System Firmware,T0857,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+System Firmware,T0857,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+System Firmware,T0857,A0009,Data Gateway,Level 2,Operational
+System Firmware,T0857,A0010,Safety Controller,Level 1,Physical
+System Firmware,T0857,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Change Operating Mode,T0858,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Change Operating Mode,T0858,A0010,Safety Controller,Level 1,Physical
+Valid Accounts,T0859,A0001,Workstation,Level 4,Cyber
+Valid Accounts,T0859,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Valid Accounts,T0859,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Valid Accounts,T0859,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Valid Accounts,T0859,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Valid Accounts,T0859,A0006,Data Historian,Level 3,Cyber
+Valid Accounts,T0859,A0007,Control Server,Level 2,Operational
+Valid Accounts,T0859,A0008,Application Server,Level 3,Cyber
+Valid Accounts,T0859,A0009,Data Gateway,Level 2,Operational
+Valid Accounts,T0859,A0010,Safety Controller,Level 1,Physical
+Valid Accounts,T0859,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Valid Accounts,T0859,A0012,Jump Host,Level 3.5,Cyber
+Valid Accounts,T0859,A0013,Field I/O,Level 0,Physical
+Wireless Compromise,T0860,A0001,Workstation,Level 4,Cyber
+Wireless Compromise,T0860,A0013,Field I/O,Level 0,Physical
+Point & Tag Identification,T0861,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Point & Tag Identification,T0861,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Point & Tag Identification,T0861,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Point & Tag Identification,T0861,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Point & Tag Identification,T0861,A0006,Data Historian,Level 3,Cyber
+Point & Tag Identification,T0861,A0007,Control Server,Level 2,Operational
+Point & Tag Identification,T0861,A0009,Data Gateway,Level 2,Operational
+Point & Tag Identification,T0861,A0010,Safety Controller,Level 1,Physical
+Supply Chain Compromise,T0862,A0001,Workstation,Level 4,Cyber
+Supply Chain Compromise,T0862,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Supply Chain Compromise,T0862,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Supply Chain Compromise,T0862,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Supply Chain Compromise,T0862,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Supply Chain Compromise,T0862,A0006,Data Historian,Level 3,Cyber
+Supply Chain Compromise,T0862,A0007,Control Server,Level 2,Operational
+Supply Chain Compromise,T0862,A0008,Application Server,Level 3,Cyber
+Supply Chain Compromise,T0862,A0009,Data Gateway,Level 2,Operational
+Supply Chain Compromise,T0862,A0010,Safety Controller,Level 1,Physical
+Supply Chain Compromise,T0862,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Supply Chain Compromise,T0862,A0012,Jump Host,Level 3.5,Cyber
+Supply Chain Compromise,T0862,A0013,Field I/O,Level 0,Physical
+User Execution,T0863,A0001,Workstation,Level 4,Cyber
+User Execution,T0863,A0002,Human-Machine Interface (HMI),Level 2,Operational
+User Execution,T0863,A0012,Jump Host,Level 3.5,Cyber
+Transient Cyber Asset,T0864,A0001,Workstation,Level 4,Cyber
+Spearphishing Attachment,T0865,A0001,Workstation,Level 4,Cyber
+Spearphishing Attachment,T0865,A0012,Jump Host,Level 3.5,Cyber
+Exploitation of Remote Services,T0866,A0001,Workstation,Level 4,Cyber
+Exploitation of Remote Services,T0866,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Exploitation of Remote Services,T0866,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Exploitation of Remote Services,T0866,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Exploitation of Remote Services,T0866,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Exploitation of Remote Services,T0866,A0006,Data Historian,Level 3,Cyber
+Exploitation of Remote Services,T0866,A0007,Control Server,Level 2,Operational
+Exploitation of Remote Services,T0866,A0008,Application Server,Level 3,Cyber
+Exploitation of Remote Services,T0866,A0009,Data Gateway,Level 2,Operational
+Exploitation of Remote Services,T0866,A0010,Safety Controller,Level 1,Physical
+Exploitation of Remote Services,T0866,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Exploitation of Remote Services,T0866,A0012,Jump Host,Level 3.5,Cyber
+Exploitation of Remote Services,T0866,A0014,Routers,Level 4,Cyber
+Lateral Tool Transfer,T0867,A0001,Workstation,Level 4,Cyber
+Lateral Tool Transfer,T0867,A0007,Control Server,Level 2,Operational
+Lateral Tool Transfer,T0867,A0008,Application Server,Level 3,Cyber
+Lateral Tool Transfer,T0867,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Lateral Tool Transfer,T0867,A0012,Jump Host,Level 3.5,Cyber
+Lateral Tool Transfer,T0867,A0013,Field I/O,Level 0,Physical
+Detect Operating Mode,T0868,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Detect Operating Mode,T0868,A0010,Safety Controller,Level 1,Physical
+Standard Application Layer Protocol,T0869,A0001,Workstation,Level 4,Cyber
+Standard Application Layer Protocol,T0869,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Standard Application Layer Protocol,T0869,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Standard Application Layer Protocol,T0869,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Standard Application Layer Protocol,T0869,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Standard Application Layer Protocol,T0869,A0006,Data Historian,Level 3,Cyber
+Standard Application Layer Protocol,T0869,A0007,Control Server,Level 2,Operational
+Standard Application Layer Protocol,T0869,A0008,Application Server,Level 3,Cyber
+Standard Application Layer Protocol,T0869,A0009,Data Gateway,Level 2,Operational
+Standard Application Layer Protocol,T0869,A0010,Safety Controller,Level 1,Physical
+Standard Application Layer Protocol,T0869,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Standard Application Layer Protocol,T0869,A0012,Jump Host,Level 3.5,Cyber
+Execution through API,T0871,A0001,Workstation,Level 4,Cyber
+Execution through API,T0871,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Execution through API,T0871,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Execution through API,T0871,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Execution through API,T0871,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Execution through API,T0871,A0009,Data Gateway,Level 2,Operational
+Execution through API,T0871,A0010,Safety Controller,Level 1,Physical
+Execution through API,T0871,A0013,Field I/O,Level 0,Physical
+Indicator Removal on Host,T0872,A0001,Workstation,Level 4,Cyber
+Indicator Removal on Host,T0872,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Indicator Removal on Host,T0872,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Indicator Removal on Host,T0872,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Indicator Removal on Host,T0872,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Indicator Removal on Host,T0872,A0006,Data Historian,Level 3,Cyber
+Indicator Removal on Host,T0872,A0007,Control Server,Level 2,Operational
+Indicator Removal on Host,T0872,A0008,Application Server,Level 3,Cyber
+Indicator Removal on Host,T0872,A0009,Data Gateway,Level 2,Operational
+Indicator Removal on Host,T0872,A0010,Safety Controller,Level 1,Physical
+Indicator Removal on Host,T0872,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Indicator Removal on Host,T0872,A0012,Jump Host,Level 3.5,Cyber
+Project File Infection,T0873,A0001,Workstation,Level 4,Cyber
+Hooking,T0874,A0001,Workstation,Level 4,Cyber
+Hooking,T0874,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Hooking,T0874,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Hooking,T0874,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Hooking,T0874,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Hooking,T0874,A0006,Data Historian,Level 3,Cyber
+Hooking,T0874,A0007,Control Server,Level 2,Operational
+Hooking,T0874,A0008,Application Server,Level 3,Cyber
+Hooking,T0874,A0009,Data Gateway,Level 2,Operational
+Hooking,T0874,A0010,Safety Controller,Level 1,Physical
+Hooking,T0874,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Hooking,T0874,A0012,Jump Host,Level 3.5,Cyber
+Hooking,T0874,A0014,Routers,Level 4,Cyber
+I/O Image,T0877,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+I/O Image,T0877,A0010,Safety Controller,Level 1,Physical
+Alarm Suppression,T0878,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Alarm Suppression,T0878,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Alarm Suppression,T0878,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Alarm Suppression,T0878,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Alarm Suppression,T0878,A0006,Data Historian,Level 3,Cyber
+Alarm Suppression,T0878,A0007,Control Server,Level 2,Operational
+Alarm Suppression,T0878,A0009,Data Gateway,Level 2,Operational
+Alarm Suppression,T0878,A0010,Safety Controller,Level 1,Physical
+Damage to Property,T0879,,,,
+Loss of Safety,T0880,,,,
+Service Stop,T0881,A0001,Workstation,Level 4,Cyber
+Service Stop,T0881,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Service Stop,T0881,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Service Stop,T0881,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Service Stop,T0881,A0006,Data Historian,Level 3,Cyber
+Service Stop,T0881,A0007,Control Server,Level 2,Operational
+Service Stop,T0881,A0008,Application Server,Level 3,Cyber
+Service Stop,T0881,A0009,Data Gateway,Level 2,Operational
+Service Stop,T0881,A0010,Safety Controller,Level 1,Physical
+Service Stop,T0881,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Service Stop,T0881,A0012,Jump Host,Level 3.5,Cyber
+Theft of Operational Information,T0882,,,,
+Internet Accessible Device,T0883,A0001,Workstation,Level 4,Cyber
+Internet Accessible Device,T0883,A0008,Application Server,Level 3,Cyber
+Internet Accessible Device,T0883,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Connection Proxy,T0884,A0001,Workstation,Level 4,Cyber
+Connection Proxy,T0884,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Connection Proxy,T0884,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Connection Proxy,T0884,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Connection Proxy,T0884,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Connection Proxy,T0884,A0006,Data Historian,Level 3,Cyber
+Connection Proxy,T0884,A0007,Control Server,Level 2,Operational
+Connection Proxy,T0884,A0008,Application Server,Level 3,Cyber
+Connection Proxy,T0884,A0009,Data Gateway,Level 2,Operational
+Connection Proxy,T0884,A0010,Safety Controller,Level 1,Physical
+Connection Proxy,T0884,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Connection Proxy,T0884,A0012,Jump Host,Level 3.5,Cyber
+Connection Proxy,T0884,A0013,Field I/O,Level 0,Physical
+Connection Proxy,T0884,A0014,Routers,Level 4,Cyber
+Commonly Used Port,T0885,A0001,Workstation,Level 4,Cyber
+Commonly Used Port,T0885,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Commonly Used Port,T0885,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Commonly Used Port,T0885,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Commonly Used Port,T0885,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Commonly Used Port,T0885,A0006,Data Historian,Level 3,Cyber
+Commonly Used Port,T0885,A0007,Control Server,Level 2,Operational
+Commonly Used Port,T0885,A0008,Application Server,Level 3,Cyber
+Commonly Used Port,T0885,A0009,Data Gateway,Level 2,Operational
+Commonly Used Port,T0885,A0010,Safety Controller,Level 1,Physical
+Commonly Used Port,T0885,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Commonly Used Port,T0885,A0012,Jump Host,Level 3.5,Cyber
+Commonly Used Port,T0885,A0013,Field I/O,Level 0,Physical
+Commonly Used Port,T0885,A0014,Routers,Level 4,Cyber
+Remote Services,T0886,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Remote Services,T0886,A0006,Data Historian,Level 3,Cyber
+Remote Services,T0886,A0007,Control Server,Level 2,Operational
+Remote Services,T0886,A0008,Application Server,Level 3,Cyber
+Remote Services,T0886,A0009,Data Gateway,Level 2,Operational
+Remote Services,T0886,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Remote Services,T0886,A0012,Jump Host,Level 3.5,Cyber
+Wireless Sniffing,T0887,A0001,Workstation,Level 4,Cyber
+Wireless Sniffing,T0887,A0013,Field I/O,Level 0,Physical
+Remote System Information Discovery,T0888,A0001,Workstation,Level 4,Cyber
+Remote System Information Discovery,T0888,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Remote System Information Discovery,T0888,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Remote System Information Discovery,T0888,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Remote System Information Discovery,T0888,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Remote System Information Discovery,T0888,A0006,Data Historian,Level 3,Cyber
+Remote System Information Discovery,T0888,A0007,Control Server,Level 2,Operational
+Remote System Information Discovery,T0888,A0008,Application Server,Level 3,Cyber
+Remote System Information Discovery,T0888,A0009,Data Gateway,Level 2,Operational
+Remote System Information Discovery,T0888,A0010,Safety Controller,Level 1,Physical
+Remote System Information Discovery,T0888,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Remote System Information Discovery,T0888,A0012,Jump Host,Level 3.5,Cyber
+Remote System Information Discovery,T0888,A0013,Field I/O,Level 0,Physical
+Modify Program,T0889,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Modify Program,T0889,A0010,Safety Controller,Level 1,Physical
+Exploitation for Privilege Escalation,T0890,A0001,Workstation,Level 4,Cyber
+Exploitation for Privilege Escalation,T0890,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Exploitation for Privilege Escalation,T0890,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Exploitation for Privilege Escalation,T0890,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Exploitation for Privilege Escalation,T0890,A0006,Data Historian,Level 3,Cyber
+Exploitation for Privilege Escalation,T0890,A0007,Control Server,Level 2,Operational
+Exploitation for Privilege Escalation,T0890,A0008,Application Server,Level 3,Cyber
+Exploitation for Privilege Escalation,T0890,A0009,Data Gateway,Level 2,Operational
+Exploitation for Privilege Escalation,T0890,A0010,Safety Controller,Level 1,Physical
+Exploitation for Privilege Escalation,T0890,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Exploitation for Privilege Escalation,T0890,A0012,Jump Host,Level 3.5,Cyber
+Exploitation for Privilege Escalation,T0890,A0014,Routers,Level 4,Cyber
+Hardcoded Credentials,T0891,A0013,Field I/O,Level 0,Physical
+Change Credential,T0892,A0001,Workstation,Level 4,Cyber
+Change Credential,T0892,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Change Credential,T0892,A0003,Programmable Logic Controller (PLC),Level 1,Physical
+Change Credential,T0892,A0004,Remote Terminal Unit (RTU),Level 1,Physical
+Change Credential,T0892,A0005,Intelligent Electronic Device (IED),Level 1,Physical
+Change Credential,T0892,A0006,Data Historian,Level 3,Cyber
+Change Credential,T0892,A0007,Control Server,Level 2,Operational
+Change Credential,T0892,A0008,Application Server,Level 3,Cyber
+Change Credential,T0892,A0009,Data Gateway,Level 2,Operational
+Change Credential,T0892,A0010,Safety Controller,Level 1,Physical
+Change Credential,T0892,A0011,Virtual Private Network (VPN) Server,Level 3.5,Cyber
+Change Credential,T0892,A0012,Jump Host,Level 3.5,Cyber
+Change Credential,T0892,A0014,Routers,Level 4,Cyber
+Data from Local System,T0893,A0001,Workstation,Level 4,Cyber
+Data from Local System,T0893,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Data from Local System,T0893,A0006,Data Historian,Level 3,Cyber
+Data from Local System,T0893,A0007,Control Server,Level 2,Operational
+Data from Local System,T0893,A0008,Application Server,Level 3,Cyber
+Data from Local System,T0893,A0012,Jump Host,Level 3.5,Cyber
+System Binary Proxy Execution,T0894,A0001,Workstation,Level 4,Cyber
+System Binary Proxy Execution,T0894,A0002,Human-Machine Interface (HMI),Level 2,Operational
+System Binary Proxy Execution,T0894,A0006,Data Historian,Level 3,Cyber
+System Binary Proxy Execution,T0894,A0007,Control Server,Level 2,Operational
+System Binary Proxy Execution,T0894,A0008,Application Server,Level 3,Cyber
+System Binary Proxy Execution,T0894,A0012,Jump Host,Level 3.5,Cyber
+Autorun Image,T0895,A0001,Workstation,Level 4,Cyber
+Autorun Image,T0895,A0002,Human-Machine Interface (HMI),Level 2,Operational
+Autorun Image,T0895,A0006,Data Historian,Level 3,Cyber
+Autorun Image,T0895,A0007,Control Server,Level 2,Operational
+Autorun Image,T0895,A0008,Application Server,Level 3,Cyber
+Autorun Image,T0895,A0012,Jump Host,Level 3.5,Cyber

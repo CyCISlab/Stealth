@@ -1,0 +1,18 @@
+data_source_id,data_source_name
+DS0001,Firmware
+DS0002,User Account
+DS0003,Scheduled Job
+DS0009,Process
+DS0011,Module
+DS0012,Script
+DS0015,Application Log
+DS0016,Drive
+DS0017,Command
+DS0019,Service
+DS0022,File
+DS0024,Windows Registry
+DS0028,Logon Session
+DS0029,Network Traffic
+DS0033,Network Share
+DS0039,Asset
+DS0040,Operational Databases

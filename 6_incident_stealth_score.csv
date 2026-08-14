@@ -1,0 +1,14 @@
+Incident,Incident ID,S_cov,Impact Techniques,Severity Class,Band Low,Band High,S Low,S High,Blindness Profile,Stealth Dominance
+pH Sensor Spoofing Attack (Urbina Testbed),A-PH-001,61.5,T0831,High,0.8,0.95,49.2,58.5,"Operational, Physical",0.833
+Pump Actuator Manipulation Attack (Urbina Testbed),A-PUMP-002,57.1,T0831,High,0.8,0.95,45.7,54.3,"Operational, Physical",0.833
+Stuxnet,A-STX-2010,35.0,"T0832, T0831, T0837, T0879",High,0.8,0.95,28.0,33.2,"Cyber, Operational, Physical",0.455
+Triton Safety Instrumented System Attack,C0030,33.3,T0828,Moderate,0.21,0.79,7.0,26.3,"Operational, Physical",0.556
+2016 Ukraine Electric Power Attack,C0025,28.6,"T0813, T0815, T0827, T0829, T0831, T0832",High,0.8,0.95,22.9,27.1,"Operational, Physical",0.5
+Dallas Emergency Siren Attack (2017),A-DAL-2017,25.0,"T0827, T0826",High,0.8,0.95,20.0,23.8,Physical,0.5
+2015 Ukraine Electric Power Attack,C0028,23.1,"T0828, T0831, T0813, T0827, T0826",High,0.8,0.95,18.5,21.9,"Operational, Physical",0.333
+2022 Ukraine Electric Power Attack,C0034,20.0,T0831,High,0.8,0.95,16.0,19.0,Operational,0.4
+Maroochy Water Breach,C0020,16.7,"T0879, T0813, T0815",High,0.8,0.95,13.3,15.8,"Operational, Physical",0.333
+Unitronics Defacement Campaign,C0031,14.3,"T0826, T0829, T0828",Moderate,0.21,0.79,3.0,11.3,Physical,0.333
+Oldsmar Water Treatment Attack,A-OLD-2021,12.5,T0831,High,0.8,0.95,10.0,11.9,Physical,0.25
+German Steel Mill Attack (2014),A-GSM-2014,12.5,"T0827, T0831, T0826, T0879",High,0.8,0.95,10.0,11.9,Physical,0.25
+FrostyGoop Incident,C0041,0.0,"T0829, T0826",Moderate,0.21,0.79,0.0,0.0,Fully Detected,0.0

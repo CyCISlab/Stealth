@@ -1,0 +1,14 @@
+Incident,I,M1,M2,M3,M4
+pH Sensor Spoofing Attack (Urbina Testbed),0.438,33.6,33.6,33.6,26.9
+Pump Actuator Manipulation Attack (Urbina Testbed),0.438,34.4,34.4,28.1,25.0
+2015 Ukraine Electric Power Attack,0.938,64.9,55.3,26.4,21.7
+Stuxnet,0.604,45.3,39.3,36.2,21.1
+Triton Safety Instrumented System Attack,0.583,38.9,30.6,22.2,19.4
+2016 Ukraine Electric Power Attack,0.583,33.3,20.8,16.7,16.7
+Maroochy Water Breach,0.938,67.7,62.5,31.2,15.7
+Dallas Emergency Siren Attack (2017),0.417,31.2,31.2,10.4,10.4
+2022 Ukraine Electric Power Attack,0.417,25.0,20.8,8.3,8.3
+Oldsmar Water Treatment Attack,0.604,37.8,15.1,15.1,7.6
+German Steel Mill Attack (2014),0.604,37.8,15.1,15.1,7.6
+Unitronics Defacement Campaign,0.417,23.8,17.9,6.0,6.0
+FrostyGoop Incident,0.75,56.2,56.2,37.5,0.0

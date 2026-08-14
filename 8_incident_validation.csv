@@ -1,0 +1,14 @@
+Incident,Incident ID,Techniques,Behavioural Techniques,S_cov,Stability Min,Stability Max,Confidence,Reason
+pH Sensor Spoofing Attack (Urbina Testbed),A-PH-001,7,6,61.5,58.3,66.7,High,stable
+Pump Actuator Manipulation Attack (Urbina Testbed),A-PUMP-002,7,6,57.1,53.8,66.7,High,stable
+Stuxnet,A-STX-2010,15,11,35.0,29.4,38.9,High,stable
+Triton Safety Instrumented System Attack,C0030,10,9,33.3,27.8,36.8,High,stable
+2016 Ukraine Electric Power Attack,C0025,12,6,28.6,18.2,33.3,High,stable
+Dallas Emergency Siren Attack (2017),A-DAL-2017,4,2,25.0,0.0,50.0,Low,fewer than 5 techniques; whole gap rests on one technique
+2015 Ukraine Electric Power Attack,C0028,20,15,23.1,19.4,25.0,High,stable
+2022 Ukraine Electric Power Attack,C0034,6,5,20.0,12.5,25.0,High,stable
+Maroochy Water Breach,C0020,12,9,16.7,12.5,20.0,High,stable
+Unitronics Defacement Campaign,C0031,6,3,14.3,0.0,25.0,Low,whole gap rests on one technique
+Oldsmar Water Treatment Attack,A-OLD-2021,5,4,12.5,0.0,16.7,Low,whole gap rests on one technique
+German Steel Mill Attack (2014),A-GSM-2014,8,4,12.5,0.0,16.7,Low,whole gap rests on one technique
+FrostyGoop Incident,C0041,4,2,0.0,0.0,0.0,Low,fewer than 5 techniques

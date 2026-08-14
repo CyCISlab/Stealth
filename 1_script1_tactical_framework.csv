@@ -1,0 +1,95 @@
+Phase,Tactic Name,Tactic ID,Technique Name,Technique ID
+Pre-Impact,Initial Access,TA0108,Drive-by Compromise,T0817
+Pre-Impact,Initial Access,TA0108,Exploit Public-Facing Application,T0819
+Pre-Impact,Initial Access,TA0108,External Remote Services,T0822
+Pre-Impact,Initial Access,TA0108,Replication Through Removable Media,T0847
+Pre-Impact,Initial Access,TA0108,Rogue Master,T0848
+Pre-Impact,Initial Access,TA0108,Wireless Compromise,T0860
+Pre-Impact,Initial Access,TA0108,Supply Chain Compromise,T0862
+Pre-Impact,Initial Access,TA0108,Transient Cyber Asset,T0864
+Pre-Impact,Initial Access,TA0108,Spearphishing Attachment,T0865
+Pre-Impact,Initial Access,TA0108,Exploitation of Remote Services,T0866
+Pre-Impact,Initial Access,TA0108,Internet Accessible Device,T0883
+Pre-Impact,Initial Access,TA0108,Remote Services,T0886
+Pre-Impact,Execution,TA0104,Command-Line Interface,T0807
+Pre-Impact,Execution,TA0104,Modify Controller Tasking,T0821
+Pre-Impact,Execution,TA0104,Graphical User Interface,T0823
+Pre-Impact,Execution,TA0104,Native API,T0834
+Pre-Impact,Execution,TA0104,Scripting,T0853
+Pre-Impact,Execution,TA0104,Change Operating Mode,T0858
+Pre-Impact,Execution,TA0104,User Execution,T0863
+Pre-Impact,Execution,TA0104,Execution through API,T0871
+Pre-Impact,Execution,TA0104,Hooking,T0874
+Pre-Impact,Execution,TA0104,Autorun Image,T0895
+Pre-Impact,Persistence,TA0110,Module Firmware,T0839
+Pre-Impact,Persistence,TA0110,System Firmware,T0857
+Pre-Impact,Persistence,TA0110,Valid Accounts,T0859
+Pre-Impact,Persistence,TA0110,Project File Infection,T0873
+Pre-Impact,Persistence,TA0110,Modify Program,T0889
+Pre-Impact,Persistence,TA0110,Hardcoded Credentials,T0891
+Pre-Impact,Privilege Escalation,TA0111,Hooking,T0874
+Pre-Impact,Privilege Escalation,TA0111,Exploitation for Privilege Escalation,T0890
+Pre-Impact,Evasion,TA0103,Exploitation for Evasion,T0820
+Pre-Impact,Evasion,TA0103,Masquerading,T0849
+Pre-Impact,Evasion,TA0103,Rootkit,T0851
+Pre-Impact,Evasion,TA0103,Spoof Reporting Message,T0856
+Pre-Impact,Evasion,TA0103,Change Operating Mode,T0858
+Pre-Impact,Evasion,TA0103,Indicator Removal on Host,T0872
+Pre-Impact,Evasion,TA0103,System Binary Proxy Execution,T0894
+Pre-Impact,Discovery,TA0102,Network Connection Enumeration,T0840
+Pre-Impact,Discovery,TA0102,Network Sniffing,T0842
+Pre-Impact,Discovery,TA0102,Remote System Discovery,T0846
+Pre-Impact,Discovery,TA0102,Wireless Sniffing,T0887
+Pre-Impact,Discovery,TA0102,Remote System Information Discovery,T0888
+Pre-Impact,Lateral Movement,TA0109,Default Credentials,T0812
+Pre-Impact,Lateral Movement,TA0109,Program Download,T0843
+Pre-Impact,Lateral Movement,TA0109,Valid Accounts,T0859
+Pre-Impact,Lateral Movement,TA0109,Exploitation of Remote Services,T0866
+Pre-Impact,Lateral Movement,TA0109,Lateral Tool Transfer,T0867
+Pre-Impact,Lateral Movement,TA0109,Remote Services,T0886
+Pre-Impact,Lateral Movement,TA0109,Hardcoded Credentials,T0891
+Pre-Impact,Collection,TA0100,Monitor Process State,T0801
+Pre-Impact,Collection,TA0100,Automated Collection,T0802
+Pre-Impact,Collection,TA0100,Data from Information Repositories,T0811
+Pre-Impact,Collection,TA0100,Adversary-in-the-Middle,T0830
+Pre-Impact,Collection,TA0100,Program Upload,T0845
+Pre-Impact,Collection,TA0100,Screen Capture,T0852
+Pre-Impact,Collection,TA0100,Point & Tag Identification,T0861
+Pre-Impact,Collection,TA0100,Detect Operating Mode,T0868
+Pre-Impact,Collection,TA0100,I/O Image,T0877
+Pre-Impact,Collection,TA0100,Wireless Sniffing,T0887
+Pre-Impact,Collection,TA0100,Data from Local System,T0893
+Pre-Impact,Command and Control,TA0101,Standard Application Layer Protocol,T0869
+Pre-Impact,Command and Control,TA0101,Connection Proxy,T0884
+Pre-Impact,Command and Control,TA0101,Commonly Used Port,T0885
+Impact,Inhibit Response Function,TA0107,Activate Firmware Update Mode,T0800
+Impact,Inhibit Response Function,TA0107,Block Command Message,T0803
+Impact,Inhibit Response Function,TA0107,Block Reporting Message,T0804
+Impact,Inhibit Response Function,TA0107,Block Serial COM,T0805
+Impact,Inhibit Response Function,TA0107,Data Destruction,T0809
+Impact,Inhibit Response Function,TA0107,Denial of Service,T0814
+Impact,Inhibit Response Function,TA0107,Device Restart/Shutdown,T0816
+Impact,Inhibit Response Function,TA0107,Manipulate I/O Image,T0835
+Impact,Inhibit Response Function,TA0107,Modify Alarm Settings,T0838
+Impact,Inhibit Response Function,TA0107,Rootkit,T0851
+Impact,Inhibit Response Function,TA0107,System Firmware,T0857
+Impact,Inhibit Response Function,TA0107,Alarm Suppression,T0878
+Impact,Inhibit Response Function,TA0107,Service Stop,T0881
+Impact,Inhibit Response Function,TA0107,Change Credential,T0892
+Impact,Impair Process Control,TA0106,Brute Force I/O,T0806
+Impact,Impair Process Control,TA0106,Modify Parameter,T0836
+Impact,Impair Process Control,TA0106,Module Firmware,T0839
+Impact,Impair Process Control,TA0106,Unauthorized Command Message,T0855
+Impact,Impair Process Control,TA0106,Spoof Reporting Message,T0856
+Impact,Impact,TA0105,Denial of Control,T0813
+Impact,Impact,TA0105,Denial of View,T0815
+Impact,Impact,TA0105,Loss of Availability,T0826
+Impact,Impact,TA0105,Loss of Control,T0827
+Impact,Impact,TA0105,Loss of Productivity and Revenue,T0828
+Impact,Impact,TA0105,Loss of View,T0829
+Impact,Impact,TA0105,Manipulation of Control,T0831
+Impact,Impact,TA0105,Manipulation of View,T0832
+Impact,Impact,TA0105,Loss of Protection,T0837
+Impact,Impact,TA0105,Damage to Property,T0879
+Impact,Impact,TA0105,Loss of Safety,T0880
+Impact,Impact,TA0105,Theft of Operational Information,T0882

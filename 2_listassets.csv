@@ -1,0 +1,15 @@
+asset_id,asset_name
+A0001,Workstation
+A0002,Human-Machine Interface (HMI)
+A0003,Programmable Logic Controller (PLC)
+A0004,Remote Terminal Unit (RTU)
+A0005,Intelligent Electronic Device (IED)
+A0006,Data Historian
+A0007,Control Server
+A0008,Application Server
+A0009,Data Gateway
+A0010,Safety Controller
+A0011,Virtual Private Network (VPN) Server
+A0012,Jump Host
+A0013,Field I/O
+A0014,Routers

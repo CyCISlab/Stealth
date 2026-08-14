@@ -1,0 +1,14 @@
+Incident,Incident ID,Techniques,Behavioural Techniques,Sum Activity,Sum Gap,S_cov,Blindness Profile,Stealth Dominance
+pH Sensor Spoofing Attack (Urbina Testbed),A-PH-001,7,6,13,8,61.5,"Operational, Physical",0.833
+Pump Actuator Manipulation Attack (Urbina Testbed),A-PUMP-002,7,6,14,8,57.1,"Operational, Physical",0.833
+Stuxnet,A-STX-2010,15,11,20,7,35.0,"Cyber, Operational, Physical",0.455
+Triton Safety Instrumented System Attack,C0030,10,9,21,7,33.3,"Operational, Physical",0.556
+2016 Ukraine Electric Power Attack,C0025,12,6,14,4,28.6,"Operational, Physical",0.5
+Dallas Emergency Siren Attack (2017),A-DAL-2017,4,2,4,1,25.0,Physical,0.5
+2015 Ukraine Electric Power Attack,C0028,20,15,39,9,23.1,"Operational, Physical",0.333
+2022 Ukraine Electric Power Attack,C0034,6,5,10,2,20.0,Operational,0.4
+Maroochy Water Breach,C0020,12,9,18,3,16.7,"Operational, Physical",0.333
+Unitronics Defacement Campaign,C0031,6,3,7,1,14.3,Physical,0.333
+Oldsmar Water Treatment Attack,A-OLD-2021,5,4,8,1,12.5,Physical,0.25
+German Steel Mill Attack (2014),A-GSM-2014,8,4,8,1,12.5,Physical,0.25
+FrostyGoop Incident,C0041,4,2,4,0,0.0,Fully Detected,0.0
